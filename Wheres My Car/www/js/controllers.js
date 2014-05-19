@@ -13,7 +13,7 @@ angular.module('starter.controllers', [])
       surname = localStorage.getItem("surname");
       pin = localStorage.getItem("pin");
       console.log(surname, pin);
-      return (surname != null && pin != null)    
+      return (surname != null && pin != null)
     },
     login: function(surname, pin) {
       localStorage.setItem("surname", surname);
@@ -56,12 +56,20 @@ angular.module('starter.controllers', [])
       return;
     }
 
+
     //$scope.checkCredentials(user);
     Auth.login(user.surname, user.pin);
     $scope.loginModal.hide();
   }
-  
+
+  $scope.logout=function(){
+    Auth.logout();
+    $scope.showLoginModal;
+  }
+
+
 })
+
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
