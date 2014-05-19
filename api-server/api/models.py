@@ -2,11 +2,12 @@ from api import app, db
 
 class OrderDetails(db.Model):
   __tablename__ = "orderdetails"
-  fleetid = db.Column(db.Integer, primary_key=True)
+
+  fleetid = db.Column(db.Integer, primary_key=True,)
   previous_expected_delivery_dt = db.Column(db.DateTime)
   current_expected_delivery_dt = db.Column(db.DateTime)
   dealerid = db.Column(db.Integer)
-  driverid = db.Column(db.Integer)
+  driverid = db.Column(db.Integer, db.ForeignKey("driver.driverid"))
   address1 = db.Column(db.String(100))
   address2 = db.Column(db.String(100))
   county = db.Column(db.String(30))
@@ -20,14 +21,18 @@ class OrderDetails(db.Model):
 
   def to_json(self):
     data = {
+        "id" : self.fleetid,
         'fleetid' : self.fleetid,
         'dealerid' : self.dealerid,
         'make' : self.make,
-        'model': self.model
+        'model': self.model,
+        "driver": self.driver.to_json()
     }
     return data
 
 class Driver(db.Model):
+  __tablename__ = "driver"
+
   driverid = db.Column(db.Integer, primary_key=True)
   forename = db.Column(db.String(20))
   surname = db.Column(db.String(20))
@@ -40,14 +45,18 @@ class Driver(db.Model):
   country = db.Column(db.String(50))
   country = db.Column(db.String(10))
   pin = db.Column(db.String(8))
-  
+  orders = db.relationship("OrderDetails", backref="driver")
+
   @classmethod
-  def check_credentials(self, username, password):
-    tmp = Driver.query.filter_by(surname=username, pin=password).all()
-    if len(tmp) > 0:
-      return True, tmp[0]
+  def check_credentials(self, username, password=None):
+    kwargs = {"surname": username, "pin": password}
+    if password == None:
+      del kwargs["pin"]
+    tmp = Driver.query.filter_by(**kwargs).first()
+    if tmp != None:
+      return tmp.pin
     else:
-      return False, None
+      return None
 
   def to_json(self):
     return {
@@ -55,4 +64,6 @@ class Driver(db.Model):
         "surname": self.surname
     }
 
+  def __repr__(self):
+    return "<Driver '{} {}'>".format(self.forename, self.surname)
 
