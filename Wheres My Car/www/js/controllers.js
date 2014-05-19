@@ -1,6 +1,17 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($scope) {
+.controller('AppCtrl', function($scope, $ionicModal) {
+  $ionicModal.fromTemplateUrl("templates/login.html", function(modal) {
+    $scope.loginModal = modal
+  }, {
+    scope: $scope,
+    animation: 'slide-in-up'
+  });
+
+  $scope.login = function() {
+    $scope.loginModal.show();
+  }
+  
 })
 
 .controller('PlaylistsCtrl', function($scope) {
