@@ -1,7 +1,8 @@
 from flask.ext.restful import abort, reqparse, Resource
 from flask import request
+from flask.ext.restful.utils import cors
 
-from api import api, db
+from api import api_endpoint, db, crossdomain
 from api import models
 
 class Main(Resource):
@@ -17,12 +18,18 @@ class Order(Resource):
 class Login(Resource):
   def post(self):
     payload = request.authorization
-    exists = models.Driver.check_credentials(payload.username, payload.password)
+    exists, User = models.Driver.check_credentials(payload.username, payload.password)
     if exists:
-      return models.Driver.query.filter_by(surname=payload.username, pin=payload.password).first().to_json()
+      return User.to_json(), 200, {"Access-Control-Allow-Origin": "*"}
     else:
-      return "user not found", 200
+      return "user not found", 400, {"Access-Control-Allow-Origin": "*"}
+  
+  def options(self):
+    return { "Allow" : "GET,POST,PUT,OPTIONS"}, 200, \
+        { "Access-Control-Allow-Origin" : "*",
+            "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization",
+            "Access-Control-Allow-Methods": "POST, OPTIONS"}
 
-api.add_resource(Main, "/")
-api.add_resource(Order, "/order/")
-api.add_resource(Login, "/login/")
+api_endpoint.add_resource(Main, "/")
+api_endpoint.add_resource(Order, "/order/")
+api_endpoint.add_resource(Login, "/login/")
