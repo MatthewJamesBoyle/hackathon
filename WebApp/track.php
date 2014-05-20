@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Where's My Car Tracker</title>
     <meta name="viewport" content="width=device-width">
-	<meta http-equiv="refresh" content="1000">
+	<meta http-equiv="refresh" content="10">
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../components/brandkit/favicon/favicon-144px.png">
 
@@ -76,11 +76,11 @@
           <div class ="btn-group">
             <button class="btn dropdown-toggle" data-toggle="dropdown">
               <i class="icon-ico_user_male_lg"></i>
-              <span class="user-name"></span>
+              <span class="user-name"><?php session_start(); echo $_SESSION['driverid'];?></span>
               <i class="icon-ico_chevron_down_lg"></i>
             </button>
             <ul class="dropdown-menu pull-right">
-              <li class="location"><a href="#"><h6>Sign Out</h6>
+              <li class="index"><a href="index.php"><h6>Sign Out</h6>
             </ul>
           </div>
           
@@ -99,7 +99,6 @@
 <div class="span12">
 <div class="block">
 <?php
-session_start();
 echo "Welcome ".$_SESSION['forename'];
 	include('config.php');
 	//$order = $_GET["order"];
@@ -316,7 +315,7 @@ $found = false;
 
 </div>
 <div class="text">
-	<p>For further details on your vechile's progress, please click on the images above</p>
+	<p>For further details on your vehicle's progress, please click on the images above</p>
 </div>
 <!-- Add an additional blue button style -->
 

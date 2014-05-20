@@ -88,6 +88,14 @@ $result = $sth->fetchAll();
 
 var_dump($result[0]);
 
+$updateQuery = "update status
+INNER JOIN orderdetails ON orderdetails.fleetid = status.fleetid
+INNER JOIN driver ON orderdetails.driverid = driverid.driverid
+INNER JOIN notification ON driver.driverid = notification.driverid
+SET status.notification = '1'
+WHERE
+notification.email='Y' AND status.notification='1'"
+$db->query($updateQuery);
 
 //send the e-mail
 $mail = new PHPMailer();
