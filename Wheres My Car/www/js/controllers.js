@@ -23,7 +23,7 @@ angular.module('starter.controllers', [])
       $ionicLoading.show({
         template: "Logging in... please wait"
       })
-      $http.post("http://10.0.1.5:5000/v1/login/", {})
+      $http.post("http://localhost:5001/v1/login/", {})
       .success(function(data) {
         $ionicLoading.hide();
         console.log(data);
@@ -91,8 +91,6 @@ angular.module('starter.controllers', [])
     Auth.logout();
     $scope.showLoginModal();
   }
-
-
 })
 
 
@@ -114,7 +112,7 @@ angular.module('starter.controllers', [])
   $ionicLoading.show({
     template: "Loading..."
   });
-  $http.get("http://10.0.1.5:5000/v1/order/", {}).success(function(data) {
+  $http.get("http://localhost:5001/v1/order/", {}).success(function(data) {
     $ionicLoading.hide();
     $scope.orders = data;
   }).error(function(data) {
@@ -131,7 +129,7 @@ angular.module('starter.controllers', [])
   $ionicLoading.show({
     template: "Loading..."
   });
-  $http.get("http://10.0.1.5:5000/v1/order/"+order_id, {})
+  $http.get("http://localhost:5001/v1/order/"+order_id, {})
   .success(function(data) {
     $scope.orderData = data;
     $scope.states = data.s
@@ -139,4 +137,8 @@ angular.module('starter.controllers', [])
     alert("Error loading data");
   });
   $ionicLoading.hide();
+})
+
+.controller("SettingsCtrl", functionn($scope, $http, $ionicLoading) {
+
 })
