@@ -16,11 +16,17 @@ class Main(Resource):
     return {"version": "v0.0.1"}
 
 class Order(Resource):
-  decorators = [auth.login_required]
+  @auth.login_required
   def get(self, order_id=None):
     data = models.OrderDetails.query.all()
     data = [d.to_json() for d in data]
-    return data
+    return data, 200, {"Access-Control-Allow-Origin": "*"}
+  
+  def options(self):
+    return { "Allow" : "GET,POST,PUT,OPTIONS"}, 200, \
+        { "Access-Control-Allow-Origin" : "*",
+            "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization",
+            "Access-Control-Allow-Methods": "POST, OPTIONS"}
 
 class Login(Resource):
   def post(self):
