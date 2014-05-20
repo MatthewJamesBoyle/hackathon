@@ -30,3 +30,15 @@ body{
   display:block;
   z-index:-99;
 }
+
+.cardImages{
+  max-height:80px;
+  max-width:100px;
+  position:relative;
+  display:block;
+  left:90%;
+  bottom:30%;
+  border-style:solid;
+  border-width:1px;
+  color:#79CDCD;
+}
