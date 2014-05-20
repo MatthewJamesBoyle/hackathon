@@ -76,18 +76,18 @@ $orderRow = mysql_fetch_array($orderResult);
 	</tr>
 	<tr class="pushOut">
 		<td>Text</td>
-		<td><input type="radio" id="texty" name="text" <?php if($row['text']=='Y') { echo "checked"; }?> /></td>
-		<td><input type="radio" id="textn" name="text" <?php if($row['text']=='N') { echo "checked" ;}?> /></td>
+		<td><input type="radio" value="Y" id="Y" name="text" <?php if($row['text']=='Y') { echo "checked"; }?> /></td>
+		<td><input type="radio" value="N" id="N" name="text" <?php if($row['text']=='N') { echo "checked" ;}?> /></td>
 	</tr>
 	<tr class="pushOut">
 		<td>Email</td>
-		<td><input type="radio" id="emaily" name="email" <?php if($row['email']=='Y') { echo "checked"; }?> /></td>
-		<td><input type="radio" id="emailn" name="email" <?php if($row['email']=='N') { echo "checked"; }?>/></td>
+		<td><input type="radio" value="Y" id="Y" name="email" <?php if($row['email']=='Y') { echo "checked"; }?> /></td>
+		<td><input type="radio" value="N" id="N" name="email" <?php if($row['email']=='N') { echo "checked"; }?>/></td>
 	</tr>
 	<tr class="pushOut">
 		<td>Push Notifications</td>
-		<td><input type="radio" id="pushy" name="push" <?php if($row['push']=='Y') { echo "checked"; }?> /></td>
-		<td><input type="radio" id="pushn" name="push" <?php if($row['push']=='N') { echo "checked"; }?> /></td>
+		<td><input type="radio" value="Y" id="Y" name="push" <?php if($row['push']=='Y') { echo "checked"; }?> /></td>
+		<td><input type="radio" value="N" id="N" name="push" <?php if($row['push']=='N') { echo "checked"; }?> /></td>
 	</tr>
 </table>
 <br />

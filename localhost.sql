@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 20, 2014 at 10:15 AM
+-- Generation Time: May 20, 2014 at 01:00 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `dealer` (
 --
 
 CREATE TABLE IF NOT EXISTS `driver` (
-  `driverid` int(11) DEFAULT NULL,
+  `driverid` int(11) NOT NULL DEFAULT '0',
   `forename` varchar(20) DEFAULT NULL,
   `surname` varchar(20) DEFAULT NULL,
   `mobile` varchar(10) DEFAULT NULL,
@@ -54,7 +54,8 @@ CREATE TABLE IF NOT EXISTS `driver` (
   `country` varchar(50) DEFAULT NULL,
   `postcode` varchar(10) DEFAULT NULL,
   `pin` varchar(8) DEFAULT NULL,
-  `password` varchar(15) NOT NULL
+  `password` varchar(15) NOT NULL,
+  PRIMARY KEY (`driverid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -62,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `driver` (
 --
 
 INSERT INTO `driver` (`driverid`, `forename`, `surname`, `mobile`, `email`, `business`, `address1`, `address2`, `county`, `country`, `postcode`, `pin`, `password`) VALUES
-(123456789, 'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test');
+(123456789, 'test', NULL, NULL, 'test@test.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test');
 
 -- --------------------------------------------------------
 
@@ -84,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `notification` (
 --
 
 INSERT INTO `notification` (`fleetid`, `driverid`, `text`, `email`, `push`) VALUES
-(1, 123456789, 'Y', 'Y', 'N');
+(1, 123456789, 'N', 'Y', 'N');
 
 -- --------------------------------------------------------
 
@@ -128,17 +129,18 @@ CREATE TABLE IF NOT EXISTS `status` (
   `order_status` varchar(20) DEFAULT NULL,
   `date` datetime DEFAULT NULL,
   `comment` varchar(200) DEFAULT NULL,
-  `visibility` char(1) DEFAULT NULL
+  `visibility` char(1) DEFAULT NULL,
+  `notification` char(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `status`
 --
 
-INSERT INTO `status` (`fleetid`, `order_status`, `date`, `comment`, `visibility`) VALUES
-(1, 'Dealer Order', '2014-05-19 00:00:00', NULL, NULL),
-(1, 'Factory Order', '2014-05-19 08:00:00', NULL, NULL),
-(1, 'Dealer Stock', '2014-05-20 00:00:00', NULL, NULL);
+INSERT INTO `status` (`fleetid`, `order_status`, `date`, `comment`, `visibility`, `notification`) VALUES
+(1, 'Dealer Order', '2014-05-19 00:00:00', NULL, NULL, '0'),
+(1, 'Factory Order', '2014-05-19 08:00:00', NULL, NULL, '0'),
+(1, 'Dealer Stock', '2014-05-20 00:00:00', NULL, NULL, '0');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
