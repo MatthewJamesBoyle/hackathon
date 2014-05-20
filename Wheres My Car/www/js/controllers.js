@@ -143,6 +143,6 @@ angular.module('starter.controllers', [])
   $ionicLoading.hide();
 })
 
-.controller("SettingsCtrl", functionn($scope, $http, $ionicLoading) {
+.controller("SettingsCtrl", function($scope, $http, $ionicLoading) {
 
 })
