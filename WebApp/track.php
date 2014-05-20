@@ -134,22 +134,13 @@
 		foreach($status as $tmp) {
 		if($found)
 		{
-			$resultComment = mysql_query("SELECT visibility, comment FROM status WHERE fleetid='".$order."' AND order_status='Dealer Order'");
-			while($rowComment= mysql_fetch_array($resultComment))
-			{
-				$comment=$rowComment[1];
-				$visible=$rowComment[0];
-			}
-			if($visible=='E')
-			{	echo "<div id='dealerOrder'>";
-				echo "<img src='img/checkmark.png' width='40%' alt='".$comment."' />";
-				echo "</div>";
-			}
 			break;
 		}
 			if($tmp == 'Dealer Order')
 			{
-				//echo "<img src='img/checkmark.png' width='40%' />";
+				echo "<div id='dealerOrder'>";
+				echo "<img src='img/checkmark.png' width='40%' />";
+				echo "</div>";
 				$found = true;
 			}
 		}
