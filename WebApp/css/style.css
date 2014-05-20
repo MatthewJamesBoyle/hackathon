@@ -21,3 +21,16 @@ table {
 	width: 25%;
 	margin-left: 3%;
 }
+
+#calendar {
+	width: 50%;
+}
+
+#rightcolumn {
+	float: left;
+	width: 60%;
+}
+
+.image {
+	width: 40%;
+}
