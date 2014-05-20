@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 19, 2014 at 10:28 AM
+-- Generation Time: May 20, 2014 at 10:15 AM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -53,8 +53,16 @@ CREATE TABLE IF NOT EXISTS `driver` (
   `county` varchar(50) DEFAULT NULL,
   `country` varchar(50) DEFAULT NULL,
   `postcode` varchar(10) DEFAULT NULL,
-  `pin` varchar(8) DEFAULT NULL
+  `pin` varchar(8) DEFAULT NULL,
+  `password` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `driver`
+--
+
+INSERT INTO `driver` (`driverid`, `forename`, `surname`, `mobile`, `email`, `business`, `address1`, `address2`, `county`, `country`, `postcode`, `pin`, `password`) VALUES
+(123456789, 'test', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'test');
 
 -- --------------------------------------------------------
 
@@ -63,11 +71,20 @@ CREATE TABLE IF NOT EXISTS `driver` (
 --
 
 CREATE TABLE IF NOT EXISTS `notification` (
-  `fleetid` int(11) DEFAULT NULL,
+  `fleetid` int(11) NOT NULL DEFAULT '0',
+  `driverid` int(11) NOT NULL,
   `text` char(1) DEFAULT NULL,
   `email` char(1) DEFAULT NULL,
-  `push` char(1) DEFAULT NULL
+  `push` char(1) DEFAULT NULL,
+  PRIMARY KEY (`fleetid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `notification`
+--
+
+INSERT INTO `notification` (`fleetid`, `driverid`, `text`, `email`, `push`) VALUES
+(1, 123456789, 'Y', 'Y', 'N');
 
 -- --------------------------------------------------------
 
@@ -93,6 +110,13 @@ CREATE TABLE IF NOT EXISTS `orderdetails` (
   `actual_delivery_dt` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `orderdetails`
+--
+
+INSERT INTO `orderdetails` (`fleetid`, `previous_expected_delivery_dt`, `current_expected_delivery_dt`, `dealerid`, `driverid`, `address1`, `address2`, `county`, `country`, `postcode`, `make`, `model`, `spec`, `reason`, `actual_delivery_dt`) VALUES
+(1, NULL, NULL, NULL, 123456789, NULL, NULL, NULL, NULL, NULL, 'Audi', 'A3', 'Random car', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -100,12 +124,21 @@ CREATE TABLE IF NOT EXISTS `orderdetails` (
 --
 
 CREATE TABLE IF NOT EXISTS `status` (
-  `fleetid` int(11) DEFAULT NULL,
-  `status` varchar(10) DEFAULT NULL,
+  `fleetid` int(11) NOT NULL,
+  `order_status` varchar(20) DEFAULT NULL,
   `date` datetime DEFAULT NULL,
   `comment` varchar(200) DEFAULT NULL,
   `visibility` char(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `status`
+--
+
+INSERT INTO `status` (`fleetid`, `order_status`, `date`, `comment`, `visibility`) VALUES
+(1, 'Dealer Order', '2014-05-19 00:00:00', NULL, NULL),
+(1, 'Factory Order', '2014-05-19 08:00:00', NULL, NULL),
+(1, 'Dealer Stock', '2014-05-20 00:00:00', NULL, NULL);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

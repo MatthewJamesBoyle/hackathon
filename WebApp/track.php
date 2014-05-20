@@ -91,6 +91,7 @@ echo "Welcome ".$_SESSION['forename'];
 	while($row=mysql_fetch_array($result)) {
 		$order = $row[0];
 	}
+	$_SESSION["order"] = $order;
 	//run query to join driver against orderdetails
 	//use order details to get id and pass through to variable thus unaffecting anything else
 	$orderResult = mysql_query("SELECT order_status FROM status WHERE fleetid='".$order."'");
