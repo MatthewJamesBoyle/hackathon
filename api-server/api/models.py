@@ -52,7 +52,7 @@ class Driver(db.Model):
 
   @classmethod
   def check_credentials(self, username, password=None):
-    kwargs = {"surname": username, "pin": password}
+    kwargs = {"driverid": username, "pin": password}
     if password == None:
       del kwargs["pin"]
     tmp = Driver.query.filter_by(**kwargs).first()
@@ -78,7 +78,7 @@ class Status(db.Model):
   
   statusid = db.Column(db.Integer, primary_key=True)
   fleetid = db.Column(db.Integer, db.ForeignKey("orderdetails.fleetid"))
-  status = db.Column(db.String(10))
+  order_status = db.Column(db.String(10))
   date = db.Column(db.DateTime)
   comment = db.Column(db.String(200))
   visibility = db.Column(db.String(1))
@@ -86,6 +86,6 @@ class Status(db.Model):
   def to_json(self):
     return {
         "id" : self.fleetid,
-        "status": self.status,
+        "status": self.order_status,
         "date" : str(self.date)
     }
