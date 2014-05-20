@@ -18,8 +18,17 @@ class Main(Resource):
 class Order(Resource):
   @auth.login_required
   def get(self, order_id=None):
-    data = models.OrderDetails.query.all()
-    data = [d.to_json() for d in data]
+    user = models.Driver.query.filter_by(surname=auth.username()).first()
+    kwargs = {
+        "driverid": user.driverid
+    }
+    if order_id != None:
+      kwargs["fleetid"] = order_id
+    data = models.OrderDetails.query.filter_by(**kwargs).all()
+    if order_id != None:
+      data = data[0].to_json()
+    else: 
+      data = [d.to_json() for d in data]
     return data, 200, {"Access-Control-Allow-Origin": "*"}
   
   def options(self):
@@ -34,7 +43,7 @@ class Login(Resource):
     exists = models.Driver.check_credentials(payload.username, payload.password)
     if exists:
       User = models.Driver.query.filter_by(surname=payload.username).first()
-      return User.to_json(), 200, {"Access-Control-Allow-Origin": "*"}
+      return User.to_json(latest=True), 200, {"Access-Control-Allow-Origin": "*"}
     else:
       return "user not found", 400, {"Access-Control-Allow-Origin": "*"}
   

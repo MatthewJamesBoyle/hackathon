@@ -18,6 +18,7 @@ class OrderDetails(db.Model):
   spec = db.Column(db.String(50))
   reason = db.Column(db.String(200))
   actual_delivery_dt = db.Column(db.DateTime)
+  status = db.relationship("Status", backref="OrderDetails")
 
   def to_json(self):
     data = {
@@ -26,7 +27,9 @@ class OrderDetails(db.Model):
         'dealerid' : self.dealerid,
         'make' : self.make,
         'model': self.model,
-        "driver": self.driver.to_json()
+        "driver": self.driver.to_json(),
+        "status": [s.to_json() for s in self.status],
+        "delivery_date": str(self.current_expected_delivery_dt)
     }
     return data
 
@@ -58,12 +61,31 @@ class Driver(db.Model):
     else:
       return None
 
-  def to_json(self):
-    return {
+  def to_json(self, latest=False):
+    data = {
         "forename": self.forename,
-        "surname": self.surname
+        "surname": self.surname,
     }
+    if latest == True:
+      data["latest_order_id"] = self.orders[-1].fleetid
+    return data
 
   def __repr__(self):
     return "<Driver '{} {}'>".format(self.forename, self.surname)
 
+class Status(db.Model):
+  __tablename__ = "status"
+  
+  statusid = db.Column(db.Integer, primary_key=True)
+  fleetid = db.Column(db.Integer, db.ForeignKey("orderdetails.fleetid"))
+  status = db.Column(db.String(10))
+  date = db.Column(db.DateTime)
+  comment = db.Column(db.String(200))
+  visibility = db.Column(db.String(1))
+
+  def to_json(self):
+    return {
+        "id" : self.fleetid,
+        "status": self.status,
+        "date" : str(self.date)
+    }

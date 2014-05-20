@@ -26,6 +26,8 @@ angular.module('starter.controllers', [])
       $http.post("http://localhost:5000/v1/login/", {})
       .success(function(data) {
         $ionicLoading.hide();
+        console.log(data);
+        localStorage.setItem("latest_order_id", data["latest_order_id"]);
       })
       .error(function(data) {
         $ionicLoading.hide();
