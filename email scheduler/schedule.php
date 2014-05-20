@@ -18,8 +18,8 @@ include('PHPMailer_5.2.4/class.phpmailer.php');
 
 //Create database connections.
 $username = "root";
-$password = "root";
-$host = "localhost:8889";
+$password = "nf5hgzyn";
+$host = "82.22.29.167";
 $dbname = "car";
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
 try {
@@ -88,6 +88,14 @@ $result = $sth->fetchAll();
 
 var_dump($result[0]);
 
+$updateQuery = "update status
+INNER JOIN orderdetails ON orderdetails.fleetid = status.fleetid
+INNER JOIN driver ON orderdetails.driverid = driver.driverid
+INNER JOIN notification ON driver.driverid = notification.driverid
+SET status.notification = '1'
+WHERE
+notification.email='Y' AND status.notification='0'";
+$db->query($updateQuery);
 
 //send the e-mail
 $mail = new PHPMailer();
@@ -119,20 +127,17 @@ $mail->IsSMTP();
     $mail->Priority = 1;
 
     //The following lines below can be changed. Should be fairly self explanatory.
-    $mail->Subject = 'GE Fleet Services: The status of your order has changed.';
-
-   $mail->Body =  "<html>
-   <body>
-   <img src='car.png'>
-   <h2 align='center'>Your Vehicle Order Update</h2>
-   <p>Ref: 1</p>
-   <p>Customer:2 </p>
-   <p> lol </p>
+  $mail->Subject = 'GE Fleet Services: The status of your order has changed.';
+   $mail->Body ='
+  <img src="http://ocat.uat.cse.comfin.ge.com/notifcation%20system/smallerone.jpg"/>
+   <h2 align="center">Your Vehicle Order Update</h2>
+   <p>Ref: #123456</p>
+   <p>Customer: Johnson </p>
    <p>Dear Mr Boyle </p>
    <p>The estimated delivery date of your vehicle has changed, please see details below.</p>
-   <p><b>Previous Estimated Delivery: 23/03/2014</b></p>
-   <p><b>Current Estimated Delivery: 25/03/2014</b></p>
-   <p><b>Reason: you're ugly/b></p>
+   <p><b>Previous Estimated Delivery:</b> 23/03/2014</p>
+   <p><b>Current Estimated Delivery:</b> 25/03/2014</p>
+   <p><b>Reason:</b> manufacturer error</p>
    <p>Delay at the manufacturing site. This may be due to an issue with sourcing parts, factory holiday shut down, an error with manufactured parts etc. Your Dealer will be able to confirm the exact reason.</p>
    <p>If there are any changes to the estimate delivery date that are more than 14 days, your dealer will contact you to discuss.</p>
    <p>You will receive a further notification once a slot has been confirmed.</p>
@@ -140,8 +145,7 @@ $mail->IsSMTP();
    <p>If you have any queries regarding your vehicle delivery please contact Customer Services on 0870 444 1000 using your Customer ID: , or speak to your dealer directly on 01619761111.</p>
    <p>Kind regards, </p>
    <p>Vehicle Order Team</p>
-   </body>
-   </html>";
+   ';
    $mail->IsHTML(true); /* <== call IsHTML() after $mail->Body has been set. */
 
 if(!$mail->Send()) {

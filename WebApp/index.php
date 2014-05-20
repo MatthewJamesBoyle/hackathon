@@ -38,10 +38,19 @@
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.js"></script>
     <![endif]-->
+
+    <style>
+
+    #user{
+      position:relative;
+      left:4%;
+    }
+    </style>
+
 </head>
     <div class="navbar navbar-static-top">
       <div class="navbar-inner">
-        <div class="container"> <a class="brand" href="#"><span class="ge-logo">General Electric</span> Marketing Design System (MDS) Documentation</a>
+        <div class="container"> <a class="brand" href="#"><span class="ge-logo">General Electric</span> </a>
         </div>
       </div>
     </div>
@@ -50,7 +59,7 @@
 <div class="span12">
 <div class="block">
 <h1>Dude, Where's My Car?</h1>
-<p>Welcome to the car tracking application, please enter your login details below</p>
+<p>Welcome to the car tracking application, please enter your login details below.</p>
 <form action="validate.php" method="post">
 <p>SSO: <input type="text" name="user" id="user"></input></p>
 <p>Password: <input type="password" name="password" id="password"></input></p>

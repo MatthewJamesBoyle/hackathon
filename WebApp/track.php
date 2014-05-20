@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Where's My Car Tracker</title>
     <meta name="viewport" content="width=device-width">
-	<meta http-equiv="refresh" content="1000">
+	<meta http-equiv="refresh" content="10">
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../components/brandkit/favicon/favicon-144px.png">
 
@@ -62,6 +62,13 @@
 	<!--[if lt IE 9]>
       <script src="../js/html5shiv.js"></script>
     <![endif]-->
+
+  <style>
+  .block{
+    height:700px;
+  }
+
+  </style>
 </head>
 
 <body>
@@ -76,14 +83,14 @@
           <div class ="btn-group">
             <button class="btn dropdown-toggle" data-toggle="dropdown">
               <i class="icon-ico_user_male_lg"></i>
-              <span class="user-name"></span>
+              <span class="user-name"><?php session_start(); echo $_SESSION['driverid'];?></span>
               <i class="icon-ico_chevron_down_lg"></i>
             </button>
             <ul class="dropdown-menu pull-right">
-              <li class="location"><a href="#"><h6>Sign Out</h6>
+              <li class="index"><a href="index.php"><h6>Sign Out</h6>
             </ul>
           </div>
-          
+
           <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
             <i class="icon-ico_menu_lg"><span>Menu</span></i>
           </a>
@@ -99,8 +106,6 @@
 <div class="span12">
 <div class="block">
 <?php
-session_start();
-echo "Welcome ".$_SESSION['forename'];
 	include('config.php');
 	//$order = $_GET["order"];
 	$driver = $_SESSION["driverid"];
@@ -117,9 +122,11 @@ echo "Welcome ".$_SESSION['forename'];
 		$status[]=$row[1];
 	}
 	$found = false;
+  $dDate ="23/05/2014";
 ?>
 <h1>Track your car</h1>
 <?php
+	echo "Welcome ".$_SESSION['forename'];
 	$result =mysql_query("SELECT * FROM orderdetails WHERE fleetid='".$order."'");
 	while ($row=mysql_fetch_array($result, MYSQL_NUM)) {
 		$make = $row[10];
@@ -135,28 +142,19 @@ echo "Welcome ".$_SESSION['forename'];
 		foreach($status as $tmp) {
 		if($found)
 		{
-			$resultComment = mysql_query("SELECT visibility, comment FROM status WHERE fleetid='".$order."' AND order_status='Dealer Order'");
-			while($rowComment= mysql_fetch_array($resultComment))
-			{
-				$comment=$rowComment[1];
-				$visible=$rowComment[0];
-			}
-			if($visible=='E')
-			{	echo "<div id='dealerOrder'>";
-				echo "<img src='img/checkmark.png' width='40%' alt='".$comment."' />";
-				echo "</div>";
-			}
 			break;
 		}
 			if($tmp == 'Dealer Order')
 			{
-				//echo "<img src='img/checkmark.png' width='40%' />";
+				echo "<div id='dealerOrder'>";
+				echo "<img src='img/tick.png' width='40%' />";
+				echo "</div>";
 				$found = true;
 			}
 		}
-		if($found=false)
+		if(!$found)
 		{
-			echo "<img src='img/close.png' width='40%' />";
+			echo "<img src='img/fail.png' width='40%' />";
 		}
 		?>
 	</div>
@@ -174,14 +172,14 @@ echo "Welcome ".$_SESSION['forename'];
 		if($tmp=='Factory Order')
 		{
 			echo "<div id='factoryOrder'>";
-			echo "<img src='img/checkmark.png' width='40%' />";
+			echo "<img src='img/tick.png' width='40%' />";
 			echo "</div>";
 			$found = true;
 		}
 	}
 		if(!$found)
 		{
-			echo "<img src='img/close.png' width='40%' />";
+			echo "<img src='img/fail.png' width='40%' />";
 		}
 	?>
 	</div>
@@ -204,87 +202,16 @@ echo "Welcome ".$_SESSION['forename'];
 		if($tmp=='Dealer Stock')
 		{
 			echo "<div id ='dealerStock'>";
-			echo "<span class='image'><img src='img/checkmark.png' width='40%' /></span>";
+			echo "<span class='image'><img src='img/tick.png' width='40%' /></span>";
 			echo "</div>";
 			$found = true;
-			echo "<p>Please select your preffered date for delivery</p>";
-			echo "Please note that it must be after $date";
-			echo '<style>
-.yui3-button {
-    margin:10px 0px 10px 0px;
-    color: #fff;
-    background-color: #3476b7;
-}
-</style>
+      $dDate= "24/05/2014";
 
-<div id="calendar" class="yui3-skin-sam yui3-g"> <!-- You need this skin class -->
-  <div id="leftcolumn" class="yui3-u">
-     <!-- Container for the calendar -->
-     <div id="mycalendar"></div>
-  </div>
-  <div id="rightcolumn" class="yui3-u">
-   <div id="links" style="padding-left:20px;">
-      <!-- The buttons are created simply by assigning the correct CSS class -->
-      Selected date: <span id="selecteddate"></span>
-   </div>
-  </div>
-</div>
-
-<script type="text/javascript">
-YUI().use(\'calendar\', \'datatype-date\', \'cssbutton\',  function(Y) {
-    
-    // Create a new instance of calendar, placing it in 
-    // #mycalendar container, setting its width to 340px,
-    // the flags for showing previous and next month\'s 
-    // dates in available empty cells to true, and setting 
-    // the date to today\'s date.          
-    var calendar = new Y.Calendar({
-      contentBox: "#mycalendar",
-      width:\'340px\',
-      showPrevMonth: true,
-      showNextMonth: true,
-      date: new Date()}).render();
-    
-    // Get a reference to Y.DataType.Date
-    var dtdate = Y.DataType.Date;
-
-    // Listen to calendar\'s selectionChange event.
-    calendar.on("selectionChange", function (ev) {
-
-      // Get the date from the list of selected
-      // dates returned with the event (since only
-      // single selection is enabled by default,
-      // we expect there to be only one date)
-      var newDate = ev.newSelection[0];
-
-      // Format the date and output it to a DOM
-      // element.
-      Y.one("#selecteddate").setHTML(dtdate.format(newDate));
-    });
-
-
-    // When the \'Show Previous Month\' link is clicked,
-    // modify the showPrevMonth property to show or hide
-    // previous month\'s dates
-    Y.one("#togglePrevMonth").on(\'click\', function (ev) {
-      ev.preventDefault();
-      calendar.set(\'showPrevMonth\', !(calendar.get("showPrevMonth")));      
-    });
-
-    // When the \'Show Next Month\' link is clicked,
-    // modify the showNextMonth property to show or hide
-    // next month\'s dates
-    Y.one("#toggleNextMonth").on(\'click\', function (ev) {
-      ev.preventDefault();
-      calendar.set(\'showNextMonth\', !(calendar.get("showNextMonth")));      
-    });
-});
-</script>';
 		}
 	}
 	if(!$found)
 		{
-			echo "<img src='img/close.png' width='40%' />";
+			echo "<img src='img/fail.png' width='40%' />";
 		}
 	?>
 	</div>
@@ -302,27 +229,36 @@ $found = false;
 		if($tmp=='Delivery Confirmed')
 		{
 			echo "<div id = 'deliveryConfirmed'>";
-			echo "<img src='img/checkmark.png' width='40%' />";
+			echo "<img src='img/tick.png' width='40%' />";
 			echo "</div>";
 			$found = true;
+      $dDate="26/05/2014";
 		}
 	}
 		if(!$found)
 		{
-			echo "<img src='img/close.png' width='40%' />";
+			echo "<img src='img/fail.png' width='40%' />";
 		}
 	?>
 	</div>
 
 </div>
 <div class="text">
-	<p>For further details on your vechile's progress, please click on the images above</p>
+  <br/>
+  <br/>
+
+	<p><b>For further details on your vehicle's progress, please click on the tick above.</b></p>
+
+  <div class= "delDate"> Your estimated delivery date is <?php echo $dDate ?> </div>
 </div>
 <!-- Add an additional blue button style -->
 
 </div>
 </div>
 </div>
+
 </div>
+
+
 </body>
 </html>
