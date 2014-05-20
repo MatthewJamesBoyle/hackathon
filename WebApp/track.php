@@ -152,7 +152,7 @@
 				$found = true;
 			}
 		}
-		if($found=false)
+		if(!$found)
 		{
 			echo "<img src='img/fail.png' width='40%' />";
 		}
