@@ -91,8 +91,6 @@ angular.module('starter.controllers', [])
     Auth.logout();
     $scope.showLoginModal();
   }
-
-
 })
 
 
@@ -139,4 +137,8 @@ angular.module('starter.controllers', [])
     alert("Error loading data");
   });
   $ionicLoading.hide();
+})
+
+.controller("SettingsCtrl", functionn($scope, $http, $ionicLoading) {
+
 })
