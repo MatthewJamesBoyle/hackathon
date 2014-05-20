@@ -1,5 +1,14 @@
 .status {
-	width: 15%;
+	width: 20%;
 	position: relative;
+	float: left;
+}
+
+.text {
+	width: 80%;
+	float: left;
+}
+
+.button {
 	float: left;
 }
