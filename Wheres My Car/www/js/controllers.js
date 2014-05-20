@@ -24,12 +24,12 @@ angular.module('starter.controllers', [])
       $ionicLoading.show({
         template: "Logging in... please wait"
       })
-      $http.post("http://10.0.1.5:5001/v1/login/", {})
+      $http.post("http://samsherar.co.uk:5001/v1/login/", {})
       .success(function(data) {
         localStorage.setItem("latest_order_id", data["latest_order_id"]);
         order_id = data["latest_order_id"];
         
-        $http.get("http://10.0.1.5:5001/v1/settings/"+order_id, {})
+        $http.get("http://samsherar.co.uk:5001/v1/settings/"+order_id, {})
         .success(function(data) {
           localStorage.setItem("settings.push", data.push);
           localStorage.setItem("settings.text", data.text);
@@ -122,7 +122,7 @@ angular.module('starter.controllers', [])
   $ionicLoading.show({
     template: "Loading..."
   });
-  $http.get("http://10.0.1.5:5001/v1/order/", {}).success(function(data) {
+  $http.get("http://samsherar.co.uk:5001/v1/order/", {}).success(function(data) {
     $ionicLoading.hide();
     $scope.orders = data;
   }).error(function(data) {
@@ -139,7 +139,7 @@ angular.module('starter.controllers', [])
   $ionicLoading.show({
     template: "Loading..."
   });
-  $http.get("http://10.0.1.5:5001/v1/order/"+order_id, {})
+  $http.get("http://samsherar.co.uk:5001/v1/order/"+order_id, {})
   .success(function(data) {
     $scope.orderData = data;
   }).error(function(data) {
@@ -174,7 +174,7 @@ angular.module('starter.controllers', [])
       "text": localStorage.getItem("settings.text"),
       "push": localStorage.getItem("settings.push")
     }
-    $http.post("http://localhost:5001/v1/settings/"+order_id, data)
+    $http.post("http://samsherar.co.uk:5001/v1/settings/"+order_id, data)
     .success(function(data) {
     })
   }
