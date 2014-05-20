@@ -31,7 +31,7 @@ class Order(Resource):
       data = [d.to_json() for d in data]
     return data, 200, {"Access-Control-Allow-Origin": "*"}
   
-  def options(self):
+  def options(self, order_id=None):
     return { "Allow" : "GET,POST,PUT,OPTIONS"}, 200, \
         { "Access-Control-Allow-Origin" : "*",
             "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization",

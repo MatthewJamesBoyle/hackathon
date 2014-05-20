@@ -4,71 +4,32 @@
   </ion-nav-buttons>
   <ion-content class="has-header">
 
-<img  class="head" src="img/header.png"/>
+    <img  class="head" src="img/header.png"/>
 
     <h1 class="cardCentre" >Order Tracker</h1>
 
     <div class="card">
       <div class="item item-divider">
         <i class="icon ion-calendar"></i>
-
-<b class="cardCentre deliver" >Current Delivery date: 23/05/2014</b>
-</div>
-
-
-</div>
+        <b class="cardCentre deliver" >Current Delivery date: {{orderData.delivery_date}}</b>
+      </div>
+    </div>
 
 
+    <ion-item ng-repeat="status in orderData.status">
+      <div class="card">
+        <div class="item item-divider">
+          <i class="icon ion-loading-b" ng-show="status.status == 'Dealer Order'"></i>
+          <i class="icon ion-checkmark-round" ng-show="status.status == 'Factory Order'"></i>
+          <i class="icon ion-model-s" ng-show="status.status == 'Dealer Stock'"></i>
+          <i class="icon ion-home" ng-show="status.status == 'Delivery Confirmed'"></i>
+          <b class="cardCentre">{{status.status}}</b>
+        </div>
 
-    <div class="card">
-      <div class="item item-divider">
-        <i class="icon ion-loading-b"></i>
-
-<b class="cardCentre">Dealer Order</b>
-</div>
-
-  <div class="item item-text-wrap">
-Your Dealer is processing the order with the manufacturer.</div>
-</div>
-
-
-<div class="card">
-  <div class="item item-divider">
-    <i class="icon ion-checkmark-round"></i>
-
-<b class="cardCentre">Factory Order</b>
-  </div>
-<div class="item item-text-wrap">
-
-Your vehicle is being built to your specifications.</div>
-</div>
-
-
-<div class="card">
-  <div class="item item-divider">
-    <i class="icon ion-model-s"></i>
-
-    <b class="cardCentre">Dealer Stock</b>
-</div>
-
-<div class="item item-text-wrap">
-  Your vehicle has arrived into Dealer Stock and is currently being registered, inspected and made ready for delivery. The application will be updated shortly with a delivery date.
-
-</div>
-</div>
-
-
-<div class="card">
-  <div class="item item-divider">
-    <i class="icon ion-home"></i>
-    <b class="cardCentre">Delivery Confirmed</b>
-</div>
-<div class="item item-text-wrap">
-
-A delivery date has been agreed. Please ensure you have read the T+Cs for the return of your vehicle (if applicable). </div>
-</div>
-
-
-
+        <div class="item item-text-wrap">
+          {{status.comment}}  
+        </div>
+      </div>
+    </ion-item>
   </ion-content>
 </ion-view>
