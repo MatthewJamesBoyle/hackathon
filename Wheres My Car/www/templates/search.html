@@ -27,10 +27,16 @@
         </div>
 
         <div class="item item-text-wrap">
+          <b>Status update :</b><br/>
           {{status.comment}}
-          <span style="color:red;" ng-show="status.status == 'Dealer Order'"></span>
+          <img class ="cardImages" src ="img/dealer.jpg" ng-show="status.status == 'Dealer Order'"/>
+          <img class ="cardImages" src ="img/factory.jpeg" ng-show="status.status == 'Factory Order'"/>
+          <img class ="cardImages" src ="img/dealerstock.jpg" ng-show="status.status == 'Dealer Stock'"/>
+          <img class ="cardImages" src ="img/delivery.jpg" ng-show="status.status == 'Delivery Confirmed'"/>
+
         </div>
       </div>
+      <div style="clear:both"></div>
     </ion-item>
   </ion-content>
 </ion-view>
