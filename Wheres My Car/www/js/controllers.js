@@ -33,7 +33,7 @@ angular.module('starter.controllers', [])
     $scope.loginModal = modal;
     Auth.checkLogin();
   }, {
-    scope: $scope,
+    scope: $scope,backdropClickToClose:false,
     animation: 'slide-in-up'
   });
 
