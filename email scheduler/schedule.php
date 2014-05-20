@@ -18,8 +18,8 @@ include('PHPMailer_5.2.4/class.phpmailer.php');
 
 //Create database connections.
 $username = "root";
-$password = "root";
-$host = "localhost:8889";
+$password = "nf5hgzyn";
+$host = "82.22.29.167";
 $dbname = "car";
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
 try {
