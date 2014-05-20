@@ -1,35 +1,51 @@
 angular.module('starter.controllers', [])
-.factory("Auth", function($rootScope, $http) {
+.factory("Auth", function($rootScope, $http, $ionicLoading) {
   return {
     checkLogin: function() {
-      console.log(this.isLoggedIn());
       if(this.isLoggedIn()) {
         $rootScope.$broadcast("app.loggedIn");
+        return true;
       } else {
         $rootScope.$broadcast("app.loggedOut");
+        return false;
       }
     },
     isLoggedIn: function() {
       surname = localStorage.getItem("surname");
       pin = localStorage.getItem("pin");
-      console.log(surname, pin);
       return (surname != null && pin != null)
     },
     login: function(surname, pin) {
+      var error = false;
       localStorage.setItem("surname", surname);
       localStorage.setItem("pin", pin);
       $http.defaults.headers.common["Authorization"] = 'Basic ' +btoa(surname+":"+pin);
+      $ionicLoading.show({
+        template: "Logging in... please wait"
+      })
       $http.post("http://localhost:5000/v1/login/", {})
       .success(function(data) {
-        console.log(data);  
+        $ionicLoading.hide();
       })
+      .error(function(data) {
+        $ionicLoading.hide();
+        alert("Login failed. Please try again")
+        error = true;
+      });
+      if(error) return false;
       $rootScope.$broadcast("app.login");
+      return true;
     },
     logout: function() {
       localStorage.removeItem("surname");
       localStorage.removeItem("pin");
       $http.defaults.headers.common["Authorization"] = "";
       $rootScope.$broadcast("app.logout");
+    },
+    setHeaders: function() {
+      surname = localStorage.getItem("surname");
+      pin = localStorage.getItem("pin");
+      $http.defaults.headers.common["Authorization"] = "Basic " + btoa(surname+":"+pin);
     }
   }
 })
@@ -37,7 +53,9 @@ angular.module('starter.controllers', [])
 .controller('AppCtrl', function($scope, $ionicModal, Auth) {
   $ionicModal.fromTemplateUrl("templates/login.html", function(modal) {
     $scope.loginModal = modal;
-    Auth.checkLogin();
+    if(Auth.checkLogin()) {
+      Auth.setHeaders();
+    }
   }, {
     scope: $scope,
     animation: 'slide-in-up'
@@ -62,15 +80,14 @@ angular.module('starter.controllers', [])
       return;
     }
 
-
-    //$scope.checkCredentials(user);
-    Auth.login(user.surname, user.pin);
+    statusA = Auth.login(user.surname, user.pin);
+    if(!statusA) return;
     $scope.loginModal.hide();
   }
 
   $scope.logout=function(){
     Auth.logout();
-    $scope.showLoginModal;
+    $scope.showLoginModal();
   }
 
 
@@ -89,4 +106,17 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+})
+
+.controller("OrderCtrl", function($scope, $http, $ionicLoading) {
+  $ionicLoading.show({
+    template: "Loading..."
+  });
+  $http.get("http://localhost:5000/v1/order/", {}).success(function(data) {
+    $ionicLoading.hide();
+    $scope.orders = data;
+  }).error(function(data) {
+    $ionicLoading.hide();
+    alert("Error loading data");
+  });
 })
