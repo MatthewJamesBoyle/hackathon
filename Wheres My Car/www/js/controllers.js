@@ -34,6 +34,11 @@ angular.module('starter.controllers', [])
         alert("Login failed. Please try again")
         error = true;
       });
+
+      $http.get("http://localhost:5001/v1/settings/", {})
+      .success(function(data) {
+        localStorage.setItem("settings")
+      })
       if(error) return false;
       $rootScope.$broadcast("app.login");
       return true;
@@ -132,7 +137,6 @@ angular.module('starter.controllers', [])
   $http.get("http://localhost:5001/v1/order/"+order_id, {})
   .success(function(data) {
     $scope.orderData = data;
-    $scope.states = data.s
   }).error(function(data) {
     alert("Error loading data");
   });

@@ -67,3 +67,4 @@ class Settings(Resource):
 api_endpoint.add_resource(Main, "/")
 api_endpoint.add_resource(Order, "/order/<int:order_id>", "/order/")
 api_endpoint.add_resource(Login, "/login/")
+api_endpoint.add_resource(Settings, "/settings/")
