@@ -6,9 +6,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>MDS Documentation: Components</title>
+    <title>Where's My Car Tracker</title>
     <meta name="viewport" content="width=device-width">
-
+	<meta http-equiv="refresh" content="10">
     <!-- For third-generation iPad with high-resolution Retina display: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../components/brandkit/favicon/favicon-144px.png">
 
@@ -35,7 +35,14 @@
 
 
     <script src="../../components/modernizr/modernizr.js"></script>
-    <!--[if lt IE 9]>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    $(document).ready(
+            function() {
+                
+            });
+	</script>
+	<!--[if lt IE 9]>
       <script src="../js/html5shiv.js"></script>
     <![endif]-->
 </head>
