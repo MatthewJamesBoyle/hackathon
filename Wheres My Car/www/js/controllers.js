@@ -1,5 +1,5 @@
 angular.module('starter.controllers', [])
-.factory("Auth", function($rootScope) {
+.factory("Auth", function($rootScope, $http) {
   return {
     checkLogin: function() {
       console.log(this.isLoggedIn());
@@ -18,11 +18,17 @@ angular.module('starter.controllers', [])
     login: function(surname, pin) {
       localStorage.setItem("surname", surname);
       localStorage.setItem("pin", pin);
+      $http.defaults.headers.common["Authorization"] = 'Basic ' +btoa(surname+":"+pin);
+      $http.post("http://localhost:5000/v1/login/", {})
+      .success(function(data) {
+        console.log(data);  
+      })
       $rootScope.$broadcast("app.login");
     },
     logout: function() {
       localStorage.removeItem("surname");
       localStorage.removeItem("pin");
+      $http.defaults.headers.common["Authorization"] = "";
       $rootScope.$broadcast("app.logout");
     }
   }

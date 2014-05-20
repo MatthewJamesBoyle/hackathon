@@ -45,9 +45,9 @@ class Driver(db.Model):
   def check_credentials(self, username, password):
     tmp = Driver.query.filter_by(surname=username, pin=password).all()
     if len(tmp) > 0:
-      return True
+      return True, tmp[0]
     else:
-      return False
+      return False, None
 
   def to_json(self):
     return {
