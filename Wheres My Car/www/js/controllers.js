@@ -1,5 +1,5 @@
 angular.module('starter.controllers', [])
-.factory("Auth", function($rootScope, $http, $ionicLoading) {
+.factory("Auth", function($rootScope, $http, $location, $ionicLoading) {
   return {
     checkLogin: function() {
       if(this.isLoggedIn()) {
@@ -18,8 +18,6 @@ angular.module('starter.controllers', [])
     login: function(surname, pin) {
       var error = false;
       var order_id = -1;
-      localStorage.setItem("surname", surname);
-      localStorage.setItem("pin", pin);
       $http.defaults.headers.common["Authorization"] = 'Basic ' +btoa(surname+":"+pin);
       $ionicLoading.show({
         template: "Logging in... please wait"
@@ -31,6 +29,8 @@ angular.module('starter.controllers', [])
         
         $http.get("http://samsherar.co.uk:5001/v1/settings/"+order_id, {})
         .success(function(data) {
+          localStorage.setItem("surname", surname);
+          localStorage.setItem("pin", pin);
           localStorage.setItem("settings.push", data.push);
           localStorage.setItem("settings.text", data.text);
           localStorage.setItem("settings.email", data.email);
@@ -39,6 +39,7 @@ angular.module('starter.controllers', [])
       })
       .error(function(data) {
         $ionicLoading.hide();
+        $http.defaults.headers.common["Authorization"] = "";
         alert("Login failed. Please try again")
         error = true;
       });
@@ -52,6 +53,7 @@ angular.module('starter.controllers', [])
       localStorage.removeItem("surname");
       localStorage.removeItem("pin");
       $http.defaults.headers.common["Authorization"] = "";
+      $location.path("#/app/playlists");
       $rootScope.$broadcast("app.logout");
     },
     setHeaders: function() {
@@ -62,22 +64,28 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('AppCtrl', function($scope, $ionicModal, Auth) {
+.controller('AppCtrl', function($scope, $ionicModal, $location, Auth) {
   $ionicModal.fromTemplateUrl("templates/login.html", function(modal) {
     $scope.loginModal = modal;
     if(Auth.checkLogin()) {
       Auth.setHeaders();
+    } else {
+      Auth.logout();
     }
   }, {
     scope: $scope,backdropClickToClose:false,
     animation: 'slide-in-up'
   });
 
+  $scope.checkLogin = function() {
+    return Auth.checkLogin()
+  }
+
   $scope.showLoginModal = function() {
     $scope.loginModal.show();
   };
 
-  $scope.$on("app.loggedOut", function(e) {
+  $scope.$on("app.logout", function(e) {
     $scope.loginModal.show();
   });
 
@@ -99,7 +107,6 @@ angular.module('starter.controllers', [])
 
   $scope.logout=function(){
     Auth.logout();
-    $scope.showLoginModal();
   }
 })
 

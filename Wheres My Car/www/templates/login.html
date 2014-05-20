@@ -12,10 +12,10 @@
   <form ng-submit="authenticate(user)">
     <div class="list">
       <label class="item item-input">
-        <input type="text" placeholder="Surname" ng-model="user.surname" id="surname">
+        <input type="text" placeholder="Username" ng-model="user.surname" id="surname" pattern="\d*">
       </label>
       <label class="item item-input">
-        <input type="password" placeholder="PIN" ng-model="user.pin" id="pin">
+        <input type="password" placeholder="PIN" ng-model="user.pin" id="pin" pattern="\d*">
       </label>
     </div>
     <div class="padding">
