@@ -11,3 +11,8 @@ Wheres\ My\ Car/platforms/
 .DS_Store
 venv/
 *.pyc
+WebApp/components/
+WebApp/css/
+WebApp/docs/
+WebApp/less/
+WebApp/mdx/
