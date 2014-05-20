@@ -1,1335 +1,0 @@
-THelloCordova
-v6
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/Info.plist /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/HelloCordova-Info.plist
-cPhaseScriptExecution Copy\ www\ directory /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
-cCpResource HelloCordova/Resources/icons/icon-76.png build/emulator/HelloCordova.app/icon-76.png
-cCpResource HelloCordova/Resources/icons/icon-40@2x.png build/emulator/HelloCordova.app/icon-40@2x.png
-cCpResource HelloCordova/Resources/icons/icon-72.png build/emulator/HelloCordova.app/icon-72.png
-cCpResource HelloCordova/Resources/icons/icon.png build/emulator/HelloCordova.app/icon.png
-cCpResource HelloCordova/Resources/icons/icon@2x.png build/emulator/HelloCordova.app/icon@2x.png
-cCopyStringsFile /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/en.lproj/Localizable.strings HelloCordova/Resources/en.lproj/Localizable.strings
-cCompileXIB /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Classes/MainViewController.xib
-cCpResource HelloCordova/Resources/icons/icon-50.png build/emulator/HelloCordova.app/icon-50.png
-cCpResource HelloCordova/Resources/icons/icon-60@2x.png build/emulator/HelloCordova.app/icon-60@2x.png
-cCopyStringsFile /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/de.lproj/Localizable.strings HelloCordova/Resources/de.lproj/Localizable.strings
-cCpResource HelloCordova/Resources/icons/icon-small.png build/emulator/HelloCordova.app/icon-small.png
-cCpResource HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png
-cCpResource HelloCordova/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloCordova.app/Default-Landscape~ipad.png
-cCpResource HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png
-cCpResource HelloCordova/Resources/icons/icon-small@2x.png build/emulator/HelloCordova.app/icon-small@2x.png
-cCpResource HelloCordova/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloCordova.app/Default-Portrait~ipad.png
-cCpResource HelloCordova/Resources/icons/icon-40.png build/emulator/HelloCordova.app/icon-40.png
-cCpResource HelloCordova/Resources/splash/Default@2x~iphone.png build/emulator/HelloCordova.app/Default@2x~iphone.png
-cCpResource HelloCordova/Resources/icons/icon-60.png build/emulator/HelloCordova.app/icon-60.png
-cCpResource HelloCordova/Resources/splash/Default~iphone.png build/emulator/HelloCordova.app/Default~iphone.png
-cCpResource HelloCordova/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloCordova.app/Default-568h@2x~iphone.png
-cCpResource HelloCordova/Resources/icons/icon-50@2x.png build/emulator/HelloCordova.app/icon-50@2x.png
-cCpResource HelloCordova/Resources/icons/icon-76@2x.png build/emulator/HelloCordova.app/icon-76@2x.png
-cCpResource HelloCordova/Resources/icons/icon-72@2x.png build/emulator/HelloCordova.app/icon-72@2x.png
-cProcessPCH /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch.pch HelloCordova/HelloCordova-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova normal i386
-cGenerateDSYMFile /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app.dSYM /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-cTouch /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
-c0000000053119F8A0000000000000198
-t1393663882
-s408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
-c000000005377D94600000000000003B4
-t1400363334
-s948
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
-c000000005377D94A000000000000019E
-t1400363338
-s414
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-c000000005377D94B0000000000484210
-t1400363339
-s4735504
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
-c000000005377D94B0000000000098030
-t1400363339
-s622640
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-c000000005377D94B0000000000059340
-t1400363339
-s365376
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-c000000005377D94C00000000005B82F0
-t1400363340
-s5997296
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000005377D94C0000000000446820
-t1400363340
-s4483104
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c000000005377D94B00000000000F1A80
-t1400363339
-s989824
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-c000000005377D94C000000000013B8C0
-t1400363340
-s1292480
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000005377D94C000000000088D8C0
-t1400363340
-s8968384
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c000000005377D94D00000000001BE790
-t1400363341
-s1828752
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000005377D94F0000000001F1DE10
-t1400363343
-s32628240
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-c000000005377D95600000000002BC360
-t1400363350
-s2868064
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
-c000000005377D9590000000000002338
-t1400363353
-s9016
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
-c000000005377D959000000000008D370
-t1400363353
-s578416
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
-c000000005377D9590000000000392E20
-t1400363353
-s3747360
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
-c00000000530E2D0300000000000141F0
-t1393437955
-s82416
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
-c000000005377D9590000000000014A80
-t1400363353
-s84608
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
-c000000005377D9590000000000033BA0
-t1400363353
-s211872
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
-c000000005377D959000000000001CFB0
-t1400363353
-s118704
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
-c000000005377D959000000000001B2B0
-t1400363353
-s111280
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
-c000000005377D95900000000000C9570
-t1400363353
-s824688
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
-c000000005377D9590000000000063280
-t1400363353
-s406144
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
-c000000005377D9590000000000008880
-t1400363353
-s34944
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
-c000000005377D9590000000000015080
-t1400363353
-s86144
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
-c000000005377D95900000000000230F0
-t1400363353
-s143600
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
-c000000005377D959000000000000E380
-t1400363353
-s58240
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
-c000000005377D9590000000000089380
-t1400363353
-s562048
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
-c000000005377D9590000000000017320
-t1400363353
-s95008
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
-c000000005377D9590000000000039CD0
-t1400363353
-s236752
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
-c000000005377D959000000000000B0B0
-t1400363353
-s45232
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
-c000000005377D9590000000000167E80
-t1400363353
-s1474176
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
-c000000005377D95900000000000106A0
-t1400363353
-s67232
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
-c000000005377D959000000000001CE40
-t1400363353
-s118336
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
-c000000005377D95900000000000740C0
-t1400363353
-s475328
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
-c000000005377D959000000000006CA60
-t1400363353
-s445024
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
-c000000005377D959000000000001BAD0
-t1400363353
-s113360
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
-c000000005377D9590000000000084A20
-t1400363353
-s543264
-
-N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
-c000000005377D965000000000000514C
-t1400363365
-s20812
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/AppDelegate.h
-c000000005379FD3E00000000000005BD
-t1400503614
-s1469
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/AppDelegate.m
-c000000005379FD3E00000000000013AF
-t1400503614
-s5039
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.h
-c000000005379FD3E00000000000004D2
-t1400503614
-s1234
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.m
-c000000005379FD3E000000000000126D
-t1400503614
-s4717
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.xib
-c000000005379FD3D0000000000001759
-t1400503613
-s5977
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/HelloCordova-Info.plist
-c00000000537B5A110000000000000A16
-t1400592913
-s2582
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/HelloCordova-Prefix.pch
-c000000005379FD3E00000000000003C9
-t1400503614
-s969
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.h
-c000000005379FD40000000000000037F
-t1400503616
-s895
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m
-c000000005379FD400000000000000490
-t1400503616
-s1168
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.h
-c000000005379FD4000000000000003BD
-t1400503616
-s957
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m
-c000000005379FD400000000000000C22
-t1400503616
-s3106
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/de.lproj/Localizable.strings
-c000000005379FD3D00000000000004C0
-t1400503613
-s1216
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/en.lproj/Localizable.strings
-c000000005379FD3D00000000000004AB
-t1400503613
-s1195
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-40.png
-c000000005379FD3D0000000000000FF2
-t1400503613
-s4082
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-40@2x.png
-c000000005379FD3D0000000000001CF3
-t1400503613
-s7411
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-50.png
-c000000005379FD3D000000000000130A
-t1400503613
-s4874
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-50@2x.png
-c000000005379FD3D000000000000258B
-t1400503613
-s9611
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-60.png
-c000000005379FD3D00000000000016B3
-t1400503613
-s5811
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-60@2x.png
-c000000005379FD3D0000000000002E94
-t1400503613
-s11924
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-72.png
-c000000005379FD3D0000000000001350
-t1400503613
-s4944
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-72@2x.png
-c000000005379FD3D0000000000002DBA
-t1400503613
-s11706
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-76.png
-c000000005379FD3D0000000000001B71
-t1400503613
-s7025
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-76@2x.png
-c000000005379FD3D0000000000003B9E
-t1400503613
-s15262
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-small.png
-c000000005379FD3D0000000000000CDE
-t1400503613
-s3294
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon-small@2x.png
-c000000005379FD3D00000000000015E8
-t1400503613
-s5608
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon.png
-c000000005379FD3D0000000000000F3E
-t1400503613
-s3902
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/icons/icon@2x.png
-c000000005379FD3D0000000000001EBD
-t1400503613
-s7869
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/splash/Default-568h@2x~iphone.png
-c000000005379FD3D00000000000085B1
-t1400503613
-s34225
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png
-c000000005379FD3D0000000000033D0A
-t1400503613
-s212234
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/splash/Default-Landscape~ipad.png
-c000000005379FD3D00000000000166A2
-t1400503613
-s91810
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png
-c000000005379FD3D0000000000033F7C
-t1400503613
-s212860
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/splash/Default-Portrait~ipad.png
-c000000005379FD3D0000000000016641
-t1400503613
-s91713
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/splash/Default@2x~iphone.png
-c000000005379FD3D0000000000007323
-t1400503613
-s29475
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Resources/splash/Default~iphone.png
-c000000005379FD3D000000000000289A
-t1400503613
-s10394
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/main.m
-c000000005379FD3E000000000000045E
-t1400503614
-s1118
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o
-t1400576839
-s74012
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.o
-t1400576839
-s50368
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.o
-t1400576839
-s41556
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/HelloCordova.LinkFileList
-c00000000537A36E60000000000000326
-t1400518374
-s806
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o
-t1400576839
-s51596
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o
-t1400576839
-s3004
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
-c00000000537A36E6000000000000002D
-t1400518374
-s45
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app
-t1400592914
-s1020
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app.dSYM
-t1400581694
-s102
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/Default-568h@2x~iphone.png
-t1400518402
-s34225
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png
-t1400518402
-s212234
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/Default-Landscape~ipad.png
-t1400518402
-s91810
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png
-t1400518402
-s212860
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/Default-Portrait~ipad.png
-t1400518402
-s91713
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/Default@2x~iphone.png
-t1400518402
-s29475
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/Default~iphone.png
-t1400518402
-s10394
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-t1400576839
-s278172
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/Info.plist
-t1400592914
-s1294
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/MainViewController.nib
-t1400518375
-s836
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/PkgInfo
-t2
-s0
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/de.lproj/Localizable.strings
-t1400518375
-s280
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/en.lproj/Localizable.strings
-t1400518375
-s166
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-40.png
-t1400518402
-s4082
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-40@2x.png
-t1400518375
-s7411
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-50.png
-t1400518375
-s4874
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-50@2x.png
-t1400518402
-s9611
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-60.png
-t1400518402
-s5811
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-60@2x.png
-t1400518402
-s11924
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-72.png
-t1400518375
-s4944
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-72@2x.png
-t1400518402
-s11706
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-76.png
-t1400518375
-s7025
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-76@2x.png
-t1400518402
-s15262
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-small.png
-t1400518402
-s3294
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon-small@2x.png
-t1400518402
-s5608
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon.png
-t1400518375
-s3902
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/icon@2x.png
-t1400518375
-s7869
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDV.h
-c00000000537A37020000000000000516
-t1400518402
-s1302
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-c00000000537A37020000000000000CFB
-t1400518402
-s3323
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-c00000000537A370200000000000008BA
-t1400518402
-s2234
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-c00000000537A370200000000000004E2
-t1400518402
-s1250
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-c00000000537A37020000000000000503
-t1400518402
-s1283
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-c00000000537A37020000000000000401
-t1400518402
-s1025
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-c00000000537A370200000000000007E6
-t1400518402
-s2022
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-c00000000537A370200000000000003DA
-t1400518402
-s986
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-c00000000537A370200000000000006CF
-t1400518402
-s1743
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-c00000000537A37020000000000000892
-t1400518402
-s2194
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-c00000000537A37020000000000000C13
-t1400518402
-s3091
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-c00000000537A37020000000000000408
-t1400518402
-s1032
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-c00000000537A3702000000000000038D
-t1400518402
-s909
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-c00000000537A3702000000000000041C
-t1400518402
-s1052
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-c00000000537A37020000000000000ACC
-t1400518402
-s2764
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-c00000000537A370200000000000004B4
-t1400518402
-s1204
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-c00000000537A37020000000000000392
-t1400518402
-s914
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-c00000000537A3702000000000000037D
-t1400518402
-s893
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-c00000000537A370200000000000005DA
-t1400518402
-s1498
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-c00000000537A370200000000000003A0
-t1400518402
-s928
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-c00000000537A37020000000000000476
-t1400518402
-s1142
-
-N/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/libCordova.a
-c00000000537B1B4600000000000D3A48
-t1400576838
-s866888
-
-N/usr/lib/libSystem.B.dylib
-c00000000530E2CF6000000000000E6D0
-t1393437942
-s59088
-
-N/usr/lib/system/libcache.dylib
-c00000000530E2D030000000000012A00
-t1393437955
-s76288
-
-N/usr/lib/system/libcommonCrypto.dylib
-c00000000530E2CEA000000000002E320
-t1393437930
-s189216
-
-N/usr/lib/system/libcompiler_rt.dylib
-c00000000530E2CF60000000000021860
-t1393437942
-s137312
-
-N/usr/lib/system/libcopyfile.dylib
-c00000000530E2D02000000000001B620
-t1393437954
-s112160
-
-N/usr/lib/system/libcorecrypto.dylib
-c00000000530E2D0200000000000BD920
-t1393437954
-s776480
-
-N/usr/lib/system/libdyld.dylib
-c00000000530E2D0300000000000141F0
-t1393437955
-s82416
-
-N/usr/lib/system/libkeymgr.dylib
-c00000000530E2D03000000000000A120
-t1393437955
-s41248
-
-N/usr/lib/system/liblaunch.dylib
-c00000000530E2D03000000000001D550
-t1393437955
-s120144
-
-N/usr/lib/system/libmacho.dylib
-c00000000530E2D020000000000014EE0
-t1393437954
-s85728
-
-N/usr/lib/system/libquarantine.dylib
-c00000000530E2D040000000000010380
-t1393437956
-s66432
-
-N/usr/lib/system/libremovefile.dylib
-c00000000530E2D04000000000000C4C0
-t1393437956
-s50368
-
-N/usr/lib/system/libsystem_asl.dylib
-c00000000530E2D0300000000000357A0
-t1393437955
-s219040
-
-N/usr/lib/system/libsystem_blocks.dylib
-c00000000530E2D03000000000000C070
-t1393437955
-s49264
-
-N/usr/lib/system/libsystem_c.dylib
-c00000000530E2CF60000000000168D00
-t1393437942
-s1477888
-
-N/usr/lib/system/libsystem_configuration.dylib
-c00000000530E2D020000000000010630
-t1393437954
-s67120
-
-N/usr/lib/system/libsystem_dnssd.dylib
-c00000000530E2D04000000000001DF10
-t1393437956
-s122640
-
-N/usr/lib/system/libsystem_info.dylib
-c00000000530E2CF60000000000075B00
-t1393437942
-s482048
-
-N/usr/lib/system/libsystem_kernel.dylib
-c00000000530E2CF6000000000007CCE0
-t1393437942
-s511200
-
-N/usr/lib/system/libsystem_m.dylib
-c00000000530E2CF600000000000766C0
-t1393437942
-s485056
-
-N/usr/lib/system/libsystem_malloc.dylib
-c00000000530E2D030000000000044DC0
-t1393437955
-s282048
-
-N/usr/lib/system/libsystem_notify.dylib
-c00000000530E2CF60000000000021FA0
-t1393437942
-s139168
-
-N/usr/lib/system/libsystem_platform.dylib
-c00000000530E2D03000000000002D920
-t1393437955
-s186656
-
-N/usr/lib/system/libsystem_pthread.dylib
-c00000000530E2D03000000000001E570
-t1393437955
-s124272
-
-N/usr/lib/system/libsystem_sandbox.dylib
-c00000000530E2CFC000000000000CC70
-t1393437948
-s52336
-
-N/usr/lib/system/libunc.dylib
-c00000000530E2CFE000000000000C3F0
-t1393437950
-s50160
-
-N/usr/lib/system/libunwind.dylib
-c00000000530E2D0300000000000199F0
-t1393437955
-s104944
-
-N/var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch.pch
-t1400518402
-s5376932
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies08028892912bb941^5e638b92912bb941^---0#1#1#--18"Check dependencies36"6E735E19-F753-49EB-8D26-C70B70120A29-
-
-CCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422269638.896508
-e422269639.048133
-r1
-xCompileC
-xbuild/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/AppDelegate.m
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/AppDelegate.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/AppDelegate.m211"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o HelloCordova/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5f9be5c6522bb941^a4520cc7522bb941^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/Classes/AppDelegate.m0000000000000000^4040"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o HelloCordova/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/usr/local/lib/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/UninstalledProducts/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -include /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch -MMD -MT dependencies -MF /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.dia -c /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Classes/AppDelegate.m -o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o36"72F7F01E-17FF-4DF9-8BBF-4D60B91587B2-
-b735865E9-5EBA-413B-BCB2-2E8DF0DC3CCD
-
-CCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422269639.018882
-e422269639.102749
-r1
-xCompileC
-xbuild/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.o
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDV.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m233"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.o HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler63f004c7522bb941^6a4e1ac7522bb941^---0#0#1#-19%DVTDocumentLocation2@131"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m0000000000000000^4080"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.o HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/usr/local/lib/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/UninstalledProducts/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -include /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch -MMD -MT dependencies -MF /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.d --serialize-diagnostics /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.dia -c /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.device/CDVDevice.m -o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.o36"87637054-E018-4C41-9EC7-435DB0B89905-
-b735865E9-5EBA-413B-BCB2-2E8DF0DC3CCD
-
-CCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422269638.897645
-e422269639.018661
-r1
-xCompileC
-xbuild/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.o
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDV.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Compile /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m234"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.o HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerf7e8e5c6522bb941^b0c704c7522bb941^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m0000000000000000^4082"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.o HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/usr/local/lib/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/UninstalledProducts/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -include /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch -MMD -MT dependencies -MF /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.d --serialize-diagnostics /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.dia -c /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Plugins/org.apache.cordova.console/CDVLogger.m -o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.o36"6CC8EE9C-1215-423E-B9A6-4F9EBED30487-
-b735865E9-5EBA-413B-BCB2-2E8DF0DC3CCD
-
-CCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422269638.896898
-e422269639.070042
-r1
-xCompileC
-xbuild/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.m
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.m225"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o HelloCordova/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compileraebbe5c6522bb941^89ee11c7522bb941^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/Classes/MainViewController.m0000000000000000^4082"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o HelloCordova/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/usr/local/lib/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/UninstalledProducts/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -include /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch -MMD -MT dependencies -MF /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.dia -c /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Classes/MainViewController.m -o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o36"FCE5EB90-68D2-4296-8923-09836165D338-
-b735865E9-5EBA-413B-BCB2-2E8DF0DC3CCD
-
-CCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422269638.895753
-e422269639.073262
-r1
-xCompileC
-xbuild/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/main.m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/main.m189"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o HelloCordova/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0666e5c6522bb941^dfc212c7522bb941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/main.m0000000000000000^3982"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o HelloCordova/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/usr/local/lib/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/UninstalledProducts/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -include /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch -MMD -MT dependencies -MF /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.dia -c /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/main.m -o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o36"092B6867-B609-4AB9-9B19-52506B4B4063-
-b735865E9-5EBA-413B-BCB2-2E8DF0DC3CCD
-
-CCompileXIB /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Classes/MainViewController.xib
-s422211175.148121
-e422211175.928285
-r1
-xCompileXIB
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.xib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Compiling /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/Classes/MainViewController.xib54"CompileXIB HelloCordova/Classes/MainViewController.xibf30426676e2ab941^27a4ed676e2ab941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/Classes/MainViewController.xib0000000000000000^939"CompileXIB HelloCordova/Classes/MainViewController.xib    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 6.0 --output-format human-readable-text --compile /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/MainViewController.nib /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Classes/MainViewController.xib36"3599905E-035B-43BB-A3AB-C7ED4601A2C4-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCopyStringsFile /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/de.lproj/Localizable.strings HelloCordova/Resources/de.lproj/Localizable.strings
-s422211175.153668
-e422211175.158126
-r1
-xCopyStringsFile
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/de.lproj/Localizable.strings
-xHelloCordova/Resources/de.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy HelloCordova/Resources/de.lproj/Localizable.strings128"CopyStringsFile build/emulator/HelloCordova.app/de.lproj/Localizable.strings HelloCordova/Resources/de.lproj/Localizable.stringsf06c27676e2ab941^e57d28676e2ab941^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/Resources/de.lproj/Localizable.strings0000000000000000^731"CopyStringsFile build/emulator/HelloCordova.app/de.lproj/Localizable.strings HelloCordova/Resources/de.lproj/Localizable.strings    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/de.lproj -- HelloCordova/Resources/de.lproj/Localizable.strings36"06AB9972-25D9-4F31-BC18-81254311A44D-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCopyStringsFile /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/en.lproj/Localizable.strings HelloCordova/Resources/en.lproj/Localizable.strings
-s422211175.147766
-e422211175.156734
-r1
-xCopyStringsFile
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/en.lproj/Localizable.strings
-xHelloCordova/Resources/en.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy HelloCordova/Resources/en.lproj/Localizable.strings128"CopyStringsFile build/emulator/HelloCordova.app/en.lproj/Localizable.strings HelloCordova/Resources/en.lproj/Localizable.stringsb3f025676e2ab941^572628676e2ab941^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/Resources/en.lproj/Localizable.strings0000000000000000^731"CopyStringsFile build/emulator/HelloCordova.app/en.lproj/Localizable.strings HelloCordova/Resources/en.lproj/Localizable.strings    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/en.lproj -- HelloCordova/Resources/en.lproj/Localizable.strings36"727F3E3A-C78C-4DA8-8FC2-877657948531-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-40.png build/emulator/HelloCordova.app/icon-40.png
-s422211175.158786
-e422211175.161324
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-40.png
-xbuild/emulator/HelloCordova.app/icon-40.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-40.png95"CpResource HelloCordova/Resources/icons/icon-40.png build/emulator/HelloCordova.app/icon-40.pngfcc528676e2ab941^514d29676e2ab941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-40.png0034309addffdf42^761"CpResource HelloCordova/Resources/icons/icon-40.png build/emulator/HelloCordova.app/icon-40.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-40.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"0837B120-4EE4-452C-99AA-F62C9B0D619A-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-40@2x.png build/emulator/HelloCordova.app/icon-40@2x.png
-s422211175.146913
-e422211175.156686
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-40@2x.png
-xbuild/emulator/HelloCordova.app/icon-40@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-40@2x.png101"CpResource HelloCordova/Resources/icons/icon-40@2x.png build/emulator/HelloCordova.app/icon-40@2x.png86a925676e2ab941^853e28676e2ab941^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-40@2x.png0034309addffdf42^770"CpResource HelloCordova/Resources/icons/icon-40@2x.png build/emulator/HelloCordova.app/icon-40@2x.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-40@2x.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"BA2D599D-DFFA-4FCE-8735-205DC007EAD6-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-50.png build/emulator/HelloCordova.app/icon-50.png
-s422211175.148415
-e422211175.150773
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-50.png
-xbuild/emulator/HelloCordova.app/icon-50.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-50.png95"CpResource HelloCordova/Resources/icons/icon-50.png build/emulator/HelloCordova.app/icon-50.pngf91226676e2ab941^c89926676e2ab941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-50.png0034309addffdf42^761"CpResource HelloCordova/Resources/icons/icon-50.png build/emulator/HelloCordova.app/icon-50.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-50.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"AF9CC5E3-8419-4848-9FBA-A339EF4B5EE2-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-50@2x.png build/emulator/HelloCordova.app/icon-50@2x.png
-s422211175.162171
-e422211175.165079
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-50@2x.png
-xbuild/emulator/HelloCordova.app/icon-50@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-50@2x.png101"CpResource HelloCordova/Resources/icons/icon-50@2x.png build/emulator/HelloCordova.app/icon-50@2x.png35b829676e2ab941^13432a676e2ab941^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-50@2x.png0034309addffdf42^770"CpResource HelloCordova/Resources/icons/icon-50@2x.png build/emulator/HelloCordova.app/icon-50@2x.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-50@2x.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"1E9684C3-C8C4-45C7-90A0-7B9CE6581AA9-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-60.png build/emulator/HelloCordova.app/icon-60.png
-s422211175.160694
-e422211175.163276
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-60.png
-xbuild/emulator/HelloCordova.app/icon-60.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-60.png95"CpResource HelloCordova/Resources/icons/icon-60.png build/emulator/HelloCordova.app/icon-60.png0a4a29676e2ab941^68cb29676e2ab941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-60.png0034309addffdf42^761"CpResource HelloCordova/Resources/icons/icon-60.png build/emulator/HelloCordova.app/icon-60.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-60.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"37003432-6E48-4022-9E56-1B8C9D853105-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-60@2x.png build/emulator/HelloCordova.app/icon-60@2x.png
-s422211175.150930
-e422211175.153527
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-60@2x.png
-xbuild/emulator/HelloCordova.app/icon-60@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-60@2x.png101"CpResource HelloCordova/Resources/icons/icon-60@2x.png build/emulator/HelloCordova.app/icon-60@2x.png25b326676e2ab941^334e27676e2ab941^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-60@2x.png0034309addffdf42^770"CpResource HelloCordova/Resources/icons/icon-60@2x.png build/emulator/HelloCordova.app/icon-60@2x.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-60@2x.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"B55F03BC-7C8A-4C05-B9C3-55B02424D1E4-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-72.png build/emulator/HelloCordova.app/icon-72.png
-s422211175.147052
-e422211175.156678
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-72.png
-xbuild/emulator/HelloCordova.app/icon-72.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-72.png95"CpResource HelloCordova/Resources/icons/icon-72.png build/emulator/HelloCordova.app/icon-72.png40c125676e2ab941^863a28676e2ab941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-72.png0034309addffdf42^761"CpResource HelloCordova/Resources/icons/icon-72.png build/emulator/HelloCordova.app/icon-72.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-72.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"12CAA88A-13D5-45E6-940A-5E5FC1376CBB-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-72@2x.png build/emulator/HelloCordova.app/icon-72@2x.png
-s422211175.163185
-e422211175.165287
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-72@2x.png
-xbuild/emulator/HelloCordova.app/icon-72@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-72@2x.png101"CpResource HelloCordova/Resources/icons/icon-72@2x.png build/emulator/HelloCordova.app/icon-72@2x.png5ce529676e2ab941^ce522a676e2ab941^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-72@2x.png0034309addffdf42^770"CpResource HelloCordova/Resources/icons/icon-72@2x.png build/emulator/HelloCordova.app/icon-72@2x.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-72@2x.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"A1AA7119-1394-4A4A-8D6C-C6E89DE349CA-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-76.png build/emulator/HelloCordova.app/icon-76.png
-s422211175.146785
-e422211175.156719
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-76.png
-xbuild/emulator/HelloCordova.app/icon-76.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-76.png95"CpResource HelloCordova/Resources/icons/icon-76.png build/emulator/HelloCordova.app/icon-76.pnga5a225676e2ab941^564528676e2ab941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-76.png0034309addffdf42^761"CpResource HelloCordova/Resources/icons/icon-76.png build/emulator/HelloCordova.app/icon-76.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-76.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"91F6C8CB-1598-45FA-A7BB-FDCEF2F0C864-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-76@2x.png build/emulator/HelloCordova.app/icon-76@2x.png
-s422211175.162480
-e422211175.164580
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-76@2x.png
-xbuild/emulator/HelloCordova.app/icon-76@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-76@2x.png101"CpResource HelloCordova/Resources/icons/icon-76@2x.png build/emulator/HelloCordova.app/icon-76@2x.png8aac29676e2ab941^92222a676e2ab941^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-76@2x.png0034309addffdf42^770"CpResource HelloCordova/Resources/icons/icon-76@2x.png build/emulator/HelloCordova.app/icon-76@2x.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-76@2x.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"A65E8E55-C57F-4F96-B3A3-EB49ACFB198C-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-small.png build/emulator/HelloCordova.app/icon-small.png
-s422211175.156784
-e422211175.159167
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-small.png
-xbuild/emulator/HelloCordova.app/icon-small.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-small.png101"CpResource HelloCordova/Resources/icons/icon-small.png build/emulator/HelloCordova.app/icon-small.png244528676e2ab941^c2bf28676e2ab941^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-small.png0034309addffdf42^770"CpResource HelloCordova/Resources/icons/icon-small.png build/emulator/HelloCordova.app/icon-small.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-small.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"6EC9A32E-8B7B-4436-8E10-6C4A081C7362-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon-small@2x.png build/emulator/HelloCordova.app/icon-small@2x.png
-s422211175.158118
-e422211175.160577
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-small@2x.png
-xbuild/emulator/HelloCordova.app/icon-small@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/emulator/HelloCordova.app/icon-small@2x.png107"CpResource HelloCordova/Resources/icons/icon-small@2x.png build/emulator/HelloCordova.app/icon-small@2x.png7aa528676e2ab941^2a1c29676e2ab941^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon-small@2x.png0034309addffdf42^779"CpResource HelloCordova/Resources/icons/icon-small@2x.png build/emulator/HelloCordova.app/icon-small@2x.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon-small@2x.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"0A1B5472-CFA6-41C4-8DF0-BE98538A5F6B-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon.png build/emulator/HelloCordova.app/icon.png
-s422211175.147231
-e422211175.156648
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon.png
-xbuild/emulator/HelloCordova.app/icon.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Copy build/emulator/HelloCordova.app/icon.png89"CpResource HelloCordova/Resources/icons/icon.png build/emulator/HelloCordova.app/icon.png00c425676e2ab941^e02d28676e2ab941^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon.png0034309addffdf42^752"CpResource HelloCordova/Resources/icons/icon.png build/emulator/HelloCordova.app/icon.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"88D8EB52-D646-4581-9ACB-02A6FB605DEF-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/icons/icon@2x.png build/emulator/HelloCordova.app/icon@2x.png
-s422211175.147464
-e422211175.156572
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon@2x.png
-xbuild/emulator/HelloCordova.app/icon@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon@2x.png95"CpResource HelloCordova/Resources/icons/icon@2x.png build/emulator/HelloCordova.app/icon@2x.png46d325676e2ab941^6a1628676e2ab941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/icon@2x.png0034309addffdf42^761"CpResource HelloCordova/Resources/icons/icon@2x.png build/emulator/HelloCordova.app/icon@2x.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/icons/icon@2x.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"D892E79A-B34E-4538-91D7-1958BCE52CF0-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloCordova.app/Default-568h@2x~iphone.png
-s422211175.161622
-e422211175.164716
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-568h@2x~iphone.png
-xbuild/emulator/HelloCordova.app/Default-568h@2x~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/emulator/HelloCordova.app/Default-568h@2x~iphone.png126"CpResource HelloCordova/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloCordova.app/Default-568h@2x~iphone.pnga27c29676e2ab941^492b2a676e2ab941^---0#0#1#-19%DVTDocumentLocation2@131"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/Default-568h@2x~iphone.png0034309addffdf42^808"CpResource HelloCordova/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloCordova.app/Default-568h@2x~iphone.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/splash/Default-568h@2x~iphone.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"68D4F8E6-A61A-449F-A142-1C54A476182D-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png
-s422211175.157050
-e422211175.160948
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-Landscape@2x~ipad.png
-xbuild/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png132"CpResource HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.pngf04c28676e2ab941^a73d29676e2ab941^---0#0#1#-19%DVTDocumentLocation2@134"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png0034309addffdf42^817"CpResource HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"B8EC2410-5383-4420-989F-B783B1407287-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloCordova.app/Default-Landscape~ipad.png
-s422211175.157452
-e422211175.162087
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-Landscape~ipad.png
-xbuild/emulator/HelloCordova.app/Default-Landscape~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/emulator/HelloCordova.app/Default-Landscape~ipad.png126"CpResource HelloCordova/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloCordova.app/Default-Landscape~ipad.png937128676e2ab941^bb7e29676e2ab941^---0#0#1#-19%DVTDocumentLocation2@131"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/Default-Landscape~ipad.png0034309addffdf42^808"CpResource HelloCordova/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloCordova.app/Default-Landscape~ipad.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/splash/Default-Landscape~ipad.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"58A622BA-94B4-4142-9802-BB3BF9FFF5F0-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png
-s422211175.157810
-e422211175.161824
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-Portrait@2x~ipad.png
-xbuild/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png130"CpResource HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.pngcf8228676e2ab941^ab7629676e2ab941^---0#0#1#-19%DVTDocumentLocation2@133"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png0034309addffdf42^814"CpResource HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"94F971B7-FBC4-479A-ADEB-6C455A0A98B5-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloCordova.app/Default-Portrait~ipad.png
-s422211175.158551
-e422211175.162992
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-Portrait~ipad.png
-xbuild/emulator/HelloCordova.app/Default-Portrait~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy build/emulator/HelloCordova.app/Default-Portrait~ipad.png124"CpResource HelloCordova/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloCordova.app/Default-Portrait~ipad.png57b128676e2ab941^49bb29676e2ab941^---0#0#1#-19%DVTDocumentLocation2@130"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/Default-Portrait~ipad.png0034309addffdf42^805"CpResource HelloCordova/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloCordova.app/Default-Portrait~ipad.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/splash/Default-Portrait~ipad.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"F44BBEB6-16E6-4C65-ABD8-A438D1991F48-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/splash/Default@2x~iphone.png build/emulator/HelloCordova.app/Default@2x~iphone.png
-s422211175.159315
-e422211175.162498
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default@2x~iphone.png
-xbuild/emulator/HelloCordova.app/Default@2x~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/emulator/HelloCordova.app/Default@2x~iphone.png116"CpResource HelloCordova/Resources/splash/Default@2x~iphone.png build/emulator/HelloCordova.app/Default@2x~iphone.pngc2da28676e2ab941^b69e29676e2ab941^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/Default@2x~iphone.png0034309addffdf42^793"CpResource HelloCordova/Resources/splash/Default@2x~iphone.png build/emulator/HelloCordova.app/Default@2x~iphone.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/splash/Default@2x~iphone.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"78703069-0E3B-4C0D-9BD8-0FB2D8B5F70D-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CCpResource HelloCordova/Resources/splash/Default~iphone.png build/emulator/HelloCordova.app/Default~iphone.png
-s422211175.161059
-e422211175.163531
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default~iphone.png
-xbuild/emulator/HelloCordova.app/Default~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy build/emulator/HelloCordova.app/Default~iphone.png110"CpResource HelloCordova/Resources/splash/Default~iphone.png build/emulator/HelloCordova.app/Default~iphone.png1d5929676e2ab941^b5dc29676e2ab941^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app/Default~iphone.png0034309addffdf42^784"CpResource HelloCordova/Resources/splash/Default~iphone.png build/emulator/HelloCordova.app/Default~iphone.png    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/Resources/splash/Default~iphone.png /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"D9234950-9128-4CEC-B3E3-DAD5FFAEB22F-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CGenerateDSYMFile /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app.dSYM /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-s422285714.816511
-e422285714.879835
-r1
-xGenerateDSYMFile
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app.dSYM
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Generate /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app.dSYM98"GenerateDSYMFile build/emulator/HelloCordova.app.dSYM build/emulator/HelloCordova.app/HelloCordova1216d192912bb941^533de192912bb941^---0#0#1#-19%DVTDocumentLocation2@110"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/build/emulator/HelloCordova.app.dSYM/0000000000000000^710"GenerateDSYMFile build/emulator/HelloCordova.app.dSYM build/emulator/HelloCordova.app/HelloCordova    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova -o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app.dSYM36"2743C40D-F9DC-4AA1-B4B0-D57F5381D8D9-
-bB0EA9796-8DA6-46A2-AEA8-9CCCD0C0A598
-
-CLd /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova normal i386
-s422269639.106373
-e422269639.333034
-r1
-xLd
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-xnormal
-xi386
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/HelloCordova.LinkFileList
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/libCordova.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVLogger.o
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/CDVDevice.o
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
-d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
-d/usr/lib/libSystem.B.dylib
-d/usr/lib/system/libcache.dylib
-d/usr/lib/system/libcommonCrypto.dylib
-d/usr/lib/system/libcompiler_rt.dylib
-d/usr/lib/system/libcopyfile.dylib
-d/usr/lib/system/libcorecrypto.dylib
-d/usr/lib/system/libdyld.dylib
-d/usr/lib/system/libkeymgr.dylib
-d/usr/lib/system/liblaunch.dylib
-d/usr/lib/system/libmacho.dylib
-d/usr/lib/system/libquarantine.dylib
-d/usr/lib/system/libremovefile.dylib
-d/usr/lib/system/libsystem_asl.dylib
-d/usr/lib/system/libsystem_blocks.dylib
-d/usr/lib/system/libsystem_c.dylib
-d/usr/lib/system/libsystem_configuration.dylib
-d/usr/lib/system/libsystem_dnssd.dylib
-d/usr/lib/system/libsystem_info.dylib
-d/usr/lib/system/libsystem_kernel.dylib
-d/usr/lib/system/libsystem_m.dylib
-d/usr/lib/system/libsystem_malloc.dylib
-d/usr/lib/system/libsystem_notify.dylib
-d/usr/lib/system/libsystem_platform.dylib
-d/usr/lib/system/libsystem_pthread.dylib
-d/usr/lib/system/libsystem_sandbox.dylib
-d/usr/lib/system/libunc.dylib
-d/usr/lib/system/libunwind.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Link /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova59"Ld build/emulator/HelloCordova.app/HelloCordova normal i386054d1bc7522bb941^0b4255c7522bb941^---0#0#1#--1869"Ld build/emulator/HelloCordova.app/HelloCordova normal i386    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -F/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -filelist /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/HelloCordova.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework AssetsLibrary /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/libCordova.a -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -Xlinker -dependency_info -Xlinker /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/HelloCordova_dependency_info.dat -o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/HelloCordova36"C11AC4B7-1E11-4AD8-AC44-5B2EC8843225-
-b735865E9-5EBA-413B-BCB2-2E8DF0DC3CCD
-
-CPhaseScriptExecution Copy\ www\ directory /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
-s422285714.551561
-e422285714.798238
-r1
-xPhaseScriptExecution
-xCopy www directory
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
-o
-oreal	0m0.197s
-ouser	0m0.071s
-osys	0m0.118s
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'142"PhaseScriptExecution Copy\ www\ directory build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh1b848d92912bb941^d95dcc92912bb941^-42"real	0m0.197suser	0m0.071ssys	0m0.118s3(21%IDEActivityLogMessage2@14"real	0m0.197s-422285714#1#14#-0#-----2@14"user	0m0.071s-422285714#15#14#-0#-----2@13"sys	0m0.118s-422285714#29#13#-0#-----0#0#1#--398"PhaseScriptExecution Copy\ www\ directory build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    /bin/sh -c \"/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh\"36"56BDDF50-4903-415E-ADDE-2A89E9498EF3-
-bB0EA9796-8DA6-46A2-AEA8-9CCCD0C0A598
-
-CProcessInfoPlistFile /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/Info.plist /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/HelloCordova-Info.plist
-s422285714.545170
-e422285714.550715
-r1
-xProcessInfoPlistFile
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app/Info.plist
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/HelloCordova-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Process /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/HelloCordova-Info.plist100"ProcessInfoPlistFile build/emulator/HelloCordova.app/Info.plist HelloCordova/HelloCordova-Info.plist1ea48b92912bb941^dbfb8c92912bb941^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/HelloCordova-Info.plist0000000000000000^817"ProcessInfoPlistFile build/emulator/HelloCordova.app/Info.plist HelloCordova/HelloCordova-Info.plist    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    builtin-infoPlistUtility /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/HelloCordova-Info.plist -genpkginfo /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app/Info.plist36"8E5B0D16-5318-45B0-96E6-E5075D4158B7-
-bB0EA9796-8DA6-46A2-AEA8-9CCCD0C0A598
-
-CProcessPCH /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch.pch HelloCordova/HelloCordova-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s422211175.929037
-e422211176.210491
-r1
-xProcessPCH
-x/var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch.pch
-xHelloCordova/HelloCordova-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/HelloCordova/HelloCordova-Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Precompile HelloCordova/HelloCordova-Prefix.pch310"ProcessPCH /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch.pch HelloCordova/HelloCordova-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler41f3ed676e2ab941^54e335686e2ab941^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/sambuca/projects/hackathon/Wheres%20My%20Car/platforms/ios/HelloCordova/HelloCordova-Prefix.pch0000000000000000^4091"ProcessPCH /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch.pch HelloCordova/HelloCordova-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/sambuca/projects/hackathon/api-server/venv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/usr/local/lib/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/UninstalledProducts/include -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator --serialize-diagnostics /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch.d -c /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/HelloCordova/HelloCordova-Prefix.pch -o /var/folders/7p/w1z1575d4pz963_6w3k1cs8c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-fenijpnrfwpxiieneykeoszvokbp/HelloCordova-Prefix.pch.pch36"C592D57E-8556-4115-89F7-33BF96EF4180-
-b5824C893-506B-4C04-820F-8978F30EDEAD
-
-CTouch /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app
-s422285714.880581
-e422285714.891193
-r1
-xTouch
-x/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Touch /Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios/build/emulator/HelloCordova.app37"Touch build/emulator/HelloCordova.appb77be192912bb941^5b25e492912bb941^---0#0#1#--454"Touch build/emulator/HelloCordova.app    cd "/Users/sambuca/projects/hackathon/Wheres My Car/platforms/ios"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin/"    /usr/bin/touch -c /Users/sambuca/projects/hackathon/Wheres\ My\ Car/platforms/ios/build/emulator/HelloCordova.app36"88D6E519-A520-4E65-A7E3-8EF681DE4333-
-bB0EA9796-8DA6-46A2-AEA8-9CCCD0C0A598
-
