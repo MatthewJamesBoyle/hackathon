@@ -53,6 +53,17 @@ class Login(Resource):
             "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization",
             "Access-Control-Allow-Methods": "POST, OPTIONS"}
 
+class Settings(Resource):
+  def get(self, order_id):
+    settings = models.Notification.query.filter_by(fleetid=order_id).first()
+    return settings.to_json()
+
+  def options(self, order_id=None):
+    return { "Allow" : "GET,POST,PUT,OPTIONS"}, 200, \
+        { "Access-Control-Allow-Origin" : "*",
+            "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization",
+            "Access-Control-Allow-Methods": "POST, OPTIONS"}
+
 api_endpoint.add_resource(Main, "/")
 api_endpoint.add_resource(Order, "/order/<int:order_id>", "/order/")
 api_endpoint.add_resource(Login, "/login/")

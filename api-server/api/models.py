@@ -87,5 +87,22 @@ class Status(db.Model):
     return {
         "id" : self.fleetid,
         "status": self.order_status,
-        "date" : str(self.date)
+        "date" : str(self.date),
+        "comment": self.comment
+    }
+
+class Notification(db.Model):
+  __tablename__ = "notification"
+
+  fleetid = db.Column(db.Integer, primary_key=True)
+  driverid = db.Column(db.Integer)
+  text = db.Column(db.String(1))
+  email = db.Column(db.String(1))
+  push = db.Column(db.String(1))
+
+  def to_json(self):
+    return {
+        "text": self.text,
+        "email": self.email,
+        "push": self.push
     }
