@@ -57,7 +57,7 @@ angular.module('starter.controllers', [])
       Auth.setHeaders();
     }
   }, {
-    scope: $scope,
+    scope: $scope,backdropClickToClose:false,
     animation: 'slide-in-up'
   });
 
