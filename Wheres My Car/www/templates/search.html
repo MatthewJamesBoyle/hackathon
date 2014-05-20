@@ -27,7 +27,8 @@
         </div>
 
         <div class="item item-text-wrap">
-          {{status.comment}}  
+          {{status.comment}}
+          <span style="color:red;" ng-show="status.status == 'Dealer Order'"></span>
         </div>
       </div>
     </ion-item>
