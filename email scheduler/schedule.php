@@ -94,7 +94,7 @@ INNER JOIN driver ON orderdetails.driverid = driverid.driverid
 INNER JOIN notification ON driver.driverid = notification.driverid
 SET status.notification = '1'
 WHERE
-notification.email='Y' AND status.notification='1'"
+notification.email='Y' AND status.notification='0'";
 $db->query($updateQuery);
 
 //send the e-mail

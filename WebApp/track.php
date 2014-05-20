@@ -99,7 +99,6 @@
 <div class="span12">
 <div class="block">
 <?php
-echo "Welcome ".$_SESSION['forename'];
 	include('config.php');
 	//$order = $_GET["order"];
 	$driver = $_SESSION["driverid"];
@@ -119,6 +118,7 @@ echo "Welcome ".$_SESSION['forename'];
 ?>
 <h1>Track your car</h1>
 <?php
+	echo "Welcome ".$_SESSION['forename'];
 	$result =mysql_query("SELECT * FROM orderdetails WHERE fleetid='".$order."'");
 	while ($row=mysql_fetch_array($result, MYSQL_NUM)) {
 		$make = $row[10];
