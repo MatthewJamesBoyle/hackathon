@@ -56,7 +56,18 @@ class Login(Resource):
 class Settings(Resource):
   def get(self, order_id):
     settings = models.Notification.query.filter_by(fleetid=order_id).first()
-    return settings.to_json()
+    return settings.to_json(), 200, {"Access-Control-Allow-Origin": "*"}
+
+  def post(self, order_id):
+    payload = request.json
+    print payload
+    settings = models.Notification.query.filter_by(fleetid=order_id).first()
+    settings.email = payload["email"]
+    settings.text = payload["text"]
+    settings.push = payload["push"]
+    db.session.commit()
+    return {"status": "OK"}, 200, {"Access-Control-Allow-Origin": "*"}
+
 
   def options(self, order_id=None):
     return { "Allow" : "GET,POST,PUT,OPTIONS"}, 200, \
@@ -67,4 +78,4 @@ class Settings(Resource):
 api_endpoint.add_resource(Main, "/")
 api_endpoint.add_resource(Order, "/order/<int:order_id>", "/order/")
 api_endpoint.add_resource(Login, "/login/")
-api_endpoint.add_resource(Settings, "/settings/")
+api_endpoint.add_resource(Settings, "/settings/<int:order_id>")

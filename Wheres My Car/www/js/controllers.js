@@ -17,17 +17,25 @@ angular.module('starter.controllers', [])
     },
     login: function(surname, pin) {
       var error = false;
+      var order_id = -1;
       localStorage.setItem("surname", surname);
       localStorage.setItem("pin", pin);
       $http.defaults.headers.common["Authorization"] = 'Basic ' +btoa(surname+":"+pin);
       $ionicLoading.show({
         template: "Logging in... please wait"
       })
-      $http.post("http://localhost:5001/v1/login/", {})
+      $http.post("http://10.0.1.5:5001/v1/login/", {})
       .success(function(data) {
-        $ionicLoading.hide();
-        console.log(data);
         localStorage.setItem("latest_order_id", data["latest_order_id"]);
+        order_id = data["latest_order_id"];
+        
+        $http.get("http://10.0.1.5:5001/v1/settings/"+order_id, {})
+        .success(function(data) {
+          localStorage.setItem("settings.push", data.push);
+          localStorage.setItem("settings.text", data.text);
+          localStorage.setItem("settings.email", data.email);
+          $ionicLoading.hide();
+        })
       })
       .error(function(data) {
         $ionicLoading.hide();
@@ -35,10 +43,7 @@ angular.module('starter.controllers', [])
         error = true;
       });
 
-      $http.get("http://localhost:5001/v1/settings/", {})
-      .success(function(data) {
-        localStorage.setItem("settings")
-      })
+      
       if(error) return false;
       $rootScope.$broadcast("app.login");
       return true;
@@ -117,7 +122,7 @@ angular.module('starter.controllers', [])
   $ionicLoading.show({
     template: "Loading..."
   });
-  $http.get("http://localhost:5001/v1/order/", {}).success(function(data) {
+  $http.get("http://10.0.1.5:5001/v1/order/", {}).success(function(data) {
     $ionicLoading.hide();
     $scope.orders = data;
   }).error(function(data) {
@@ -134,7 +139,7 @@ angular.module('starter.controllers', [])
   $ionicLoading.show({
     template: "Loading..."
   });
-  $http.get("http://localhost:5001/v1/order/"+order_id, {})
+  $http.get("http://10.0.1.5:5001/v1/order/"+order_id, {})
   .success(function(data) {
     $scope.orderData = data;
   }).error(function(data) {
@@ -144,5 +149,37 @@ angular.module('starter.controllers', [])
 })
 
 .controller("SettingsCtrl", function($scope, $http, $ionicLoading) {
+  $scope.checked = function(name) {
+    tmp = localStorage.getItem(name);
+    if(tmp == "N") {
+      return false;
+    } else {
+      return true;
+    }
+  };
 
+  $scope.flip = function(name) {
+    tmp = localStorage.getItem(name);
+    order_id = localStorage.getItem("latest_order_id")
+    if(tmp == "N") {
+      console.log("asd");
+      tmp = "Y";
+    } else {
+      tmp = "N"
+    }
+    localStorage.setItem(name, tmp);
+
+    data = {
+      "email": localStorage.getItem("settings.email"),
+      "text": localStorage.getItem("settings.text"),
+      "push": localStorage.getItem("settings.push")
+    }
+    $http.post("http://localhost:5001/v1/settings/"+order_id, data)
+    .success(function(data) {
+    })
+  }
+
+  $scope.sendSettings = function(email, text, push) {
+  
+  };  
 })

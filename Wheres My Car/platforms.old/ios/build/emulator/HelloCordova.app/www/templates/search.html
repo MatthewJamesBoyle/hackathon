@@ -1,0 +1,35 @@
+<ion-view title="Tracker">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+
+    <img  class="head" src="img/header.png"/>
+
+    <h1 class="cardCentre" >Order Tracker</h1>
+
+    <div class="card">
+      <div class="item item-divider">
+        <i class="icon ion-calendar"></i>
+        <b class="cardCentre deliver" >Current Delivery date: {{orderData.delivery_date}}</b>
+      </div>
+    </div>
+
+
+    <ion-item ng-repeat="status in orderData.status">
+      <div class="card">
+        <div class="item item-divider">
+          <i class="icon ion-loading-b" ng-show="status.status == 'Dealer Order'"></i>
+          <i class="icon ion-checkmark-round" ng-show="status.status == 'Factory Order'"></i>
+          <i class="icon ion-model-s" ng-show="status.status == 'Dealer Stock'"></i>
+          <i class="icon ion-home" ng-show="status.status == 'Delivery Confirmed'"></i>
+          <b class="cardCentre">{{status.status}}</b>
+        </div>
+
+        <div class="item item-text-wrap">
+          {{status.comment}}  
+        </div>
+      </div>
+    </ion-item>
+  </ion-content>
+</ion-view>

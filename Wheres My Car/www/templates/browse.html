@@ -12,7 +12,7 @@
   <li class="item item-toggle">
      Push Notifications
      <label class="toggle toggle-assertive">
-       <input type="checkbox">
+       <input type="checkbox" ng-checked="checked('settings.push')" ng-click="flip('settings.push')">
        <div class="track">
          <div class="handle"></div>
        </div>
@@ -22,7 +22,7 @@
   <li class="item item-toggle">
 Text Notifications
      <label class="toggle toggle-assertive">
-       <input type="checkbox">
+       <input type="checkbox" ng-checked="checked('settings.text')" ng-click="flip('settings.text')">
        <div class="track">
          <div class="handle"></div>
        </div>
@@ -31,8 +31,8 @@ Text Notifications
 
   <li class="item item-toggle">
 E-mail notifications
-  <label class="toggle toggle-assertive">
-       <input type="checkbox">
+  <label class="toggle toggle-assertive" >
+    <input type="checkbox" ng-checked="checked('settings.email')" ng-click="flip('settings.email')">
        <div class="track">
          <div class="handle"></div>
        </div>
