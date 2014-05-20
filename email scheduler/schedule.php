@@ -18,8 +18,8 @@ include('PHPMailer_5.2.4/class.phpmailer.php');
 
 //Create database connections.
 $username = "root";
-$password = "root";
-$host = "localhost:8889";
+$password = "nf5hgzyn";
+$host = "82.22.29.167";
 $dbname = "car";
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
 try {
@@ -90,7 +90,7 @@ var_dump($result[0]);
 
 $updateQuery = "update status
 INNER JOIN orderdetails ON orderdetails.fleetid = status.fleetid
-INNER JOIN driver ON orderdetails.driverid = driverid.driverid
+INNER JOIN driver ON orderdetails.driverid = driver.driverid
 INNER JOIN notification ON driver.driverid = notification.driverid
 SET status.notification = '1'
 WHERE
