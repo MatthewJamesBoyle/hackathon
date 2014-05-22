@@ -1,0 +1,45 @@
+.status {
+	margin-left:5%;
+	width: 20%;
+	position: relative;
+	float: left;
+}
+
+.text {
+	width: 80%;
+	float: left;
+}
+
+.button {
+	float: left;
+}
+
+td, tr {
+	margin-left: 5%;
+}
+
+table {
+	width: 25%;
+	margin-left: 3%;
+}
+
+#calendar {
+	width: 50%;
+}
+
+#rightcolumn {
+	float: left;
+	width: 60%;
+}
+
+.image {
+	width: 40%;
+}
+
+.delDate{
+	margin-left:10%;
+	margin-top:5%;
+	font-size:30px;
+	color:green;
+	text-align:center;
+}

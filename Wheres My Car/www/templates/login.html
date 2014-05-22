@@ -1,0 +1,28 @@
+
+<div class="modal">
+
+  <!-- Modal header bar -->
+  <ion-header-bar class="bar-secondary">
+  <h1 class="title">Login</h1>
+  </ion-header-bar>
+
+  <!-- Modal content area -->
+  <ion-content>
+
+  <form ng-submit="authenticate(user)">
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Username" ng-model="user.surname" id="surname" pattern="\d*">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="PIN" ng-model="user.pin" id="pin" pattern="\d*">
+      </label>
+    </div>
+    <div class="padding">
+      <button type="submit" class="button button-block button-positive">Login!</button>
+    </div>
+  </form>
+
+  </ion-content>
+
+</div>

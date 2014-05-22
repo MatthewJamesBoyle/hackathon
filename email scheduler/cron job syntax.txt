@@ -1,0 +1,10 @@
+
+
+
+
+
+chmod 755 schedule.php
+
+./schedule.php
+
+*/5**** usr/bin/php schedule.php
