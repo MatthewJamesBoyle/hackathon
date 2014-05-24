@@ -21,6 +21,35 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
+    <script src="js/pushnotification.js"></script>
+    <script type="text/javascript">
+      var pushNotification;
+      alert("yolo");
+      document.addEventListener("deviceready", function() {
+        pushNotification = window.plugins.pushNotification;
+        
+        pushNotification.register(function(token) {
+          console.log(token)
+        }, function(err) {
+          console.log(err)
+        }, {
+          "badge": "true",
+          "sound": "false",
+          "alert": "true",
+          "ecb": "onNotificationAPN"
+          });
+
+        function onNotificationAPN(event) {
+          if(event.alert) {
+            navigatior.notification.alert(event.alert)
+          }
+          
+          if (event.badge) {
+          pushNotification.setApplicationIconBadgeNumber(function() {}, function(){}, event.badge);
+          }
+        }
+      })
+    </script>
   </head>
 
   <body ng-app="starter">
