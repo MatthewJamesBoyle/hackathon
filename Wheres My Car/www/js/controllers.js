@@ -138,21 +138,23 @@ angular.module('starter.controllers', [])
   });
 })
 
-.controller("OrderLatestCtrl", function($scope, $http, $ionicLoading) {
-  order_id = localStorage.getItem("latest_order_id");
-  if(order_id === null) {
-    alert("done fooked");
+.controller("OrderLatestCtrl", function($scope, $http, $ionicLoading, $interval) {
+  callback = function() {
+    $ionicLoading.show({template: "Loading..."})
+    order_id = localStorage.getItem("latest_order_id");
+    if(order_id === null) {
+      alert("done fooked");
+    }
+    $http.get("http://samsherar.co.uk:5001/v1/order/"+order_id, {})
+    .success(function(data) {
+      $scope.orderData = data;
+    }).error(function(data) {
+      alert("Error loading data");
+    });
+    $ionicLoading.hide();
   }
-  $ionicLoading.show({
-    template: "Loading..."
-  });
-  $http.get("http://samsherar.co.uk:5001/v1/order/"+order_id, {})
-  .success(function(data) {
-    $scope.orderData = data;
-  }).error(function(data) {
-    alert("Error loading data");
-  });
-  $ionicLoading.hide();
+  callback();
+  $interval(callback, 10000)
 })
 
 .controller("SettingsCtrl", function($scope, $http, $ionicLoading) {
