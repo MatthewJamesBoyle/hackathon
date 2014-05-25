@@ -20,15 +20,20 @@ body{
 
 .cardCentre{
   text-align:center;
-
 }
 
 .head{
-  max-height:200px;
+  height:200px;
   margin-left:auto;
   margin-right:auto;
-  display:block;
-  z-index:-99;
+}
+
+.head h1 {
+  color:white;
+  padding-top:160px;
+  font-weight:bold;
+  text-align:right;
+  padding-right:10px;
 }
 
 .cardImages{

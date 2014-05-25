@@ -4,9 +4,9 @@
   </ion-nav-buttons>
   <ion-content class="has-header">
 
-    <img  class="head" src="img/header.png"/>
-
-    <h1 class="cardCentre" >Order Tracker</h1>
+    <div  class="head" style="background:url(img/header.png);"/>
+      <h1 class="cardCentre" >Order Tracker</h1>
+    </div>
 
     <div class="card">
       <div class="item item-divider">
@@ -29,11 +29,12 @@
         <div class="item item-text-wrap">
           <b>Status update :</b><br/>
           {{status.comment}}
+          <input type="date" ng-show="status.status == 'Dealer Stock'">
           <img class ="cardImages" src ="img/dealer.jpg" ng-show="status.status == 'Dealer Order'"/>
           <img class ="cardImages" src ="img/factory.jpeg" ng-show="status.status == 'Factory Order'"/>
           <img class ="cardImages" src ="img/dealerstock.jpg" ng-show="status.status == 'Dealer Stock'"/>
           <img class ="cardImages" src ="img/delivery.jpg" ng-show="status.status == 'Delivery Confirmed'"/>
-
+          
         </div>
       </div>
       <div style="clear:both"></div>
