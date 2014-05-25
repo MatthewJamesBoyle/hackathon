@@ -1,4 +1,34 @@
 angular.module('starter.controllers', [])
+.factory("Push", function() {
+  var pushNotification;
+  register = function() {
+      pushNotification = window.plugins.pushNotification;
+      pushNotification.register(function(token) {
+        alert(token);
+      }, function(err) {
+        alert("error has occured");
+        alert(err)
+      }, {
+        "badge": "true",
+        "sound": "false",
+        "alert": "true",
+        "ecb": "onNotificationAPN"
+      });
+
+      function onNotificationAPN(event) {
+        if(event.alert) {
+          navigatior.notification.alert(event.alert)
+        }
+
+        if (event.badge) {
+          pushNotification.setApplicationIconBadgeNumber(function() {}, function(){}, event.badge);
+        }
+      }
+  };
+  return {
+    register: register
+  }
+})
 .factory("Auth", function($rootScope, $http, $location, $ionicLoading) {
   return {
     checkLogin: function() {
@@ -26,7 +56,7 @@ angular.module('starter.controllers', [])
       .success(function(data) {
         localStorage.setItem("latest_order_id", data["latest_order_id"]);
         order_id = data["latest_order_id"];
-        
+
         $http.get("http://samsherar.co.uk:5001/v1/settings/"+order_id, {})
         .success(function(data) {
           localStorage.setItem("surname", surname);
@@ -34,6 +64,7 @@ angular.module('starter.controllers', [])
           localStorage.setItem("settings.push", data.push);
           localStorage.setItem("settings.text", data.text);
           localStorage.setItem("settings.email", data.email);
+          if(data.push == "Y") $rootScope.$broadcast("app.triggerPush")
           $ionicLoading.hide();
         })
       })
@@ -44,9 +75,7 @@ angular.module('starter.controllers', [])
         error = true;
       });
 
-      
       if(error) return false;
-      $rootScope.$broadcast("app.login");
       return true;
     },
     logout: function() {
@@ -64,7 +93,7 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('AppCtrl', function($scope, $ionicModal, $location, Auth) {
+.controller('AppCtrl', function($scope, $ionicModal, $location, Auth, Push) {
   $ionicModal.fromTemplateUrl("templates/login.html", function(modal) {
     $scope.loginModal = modal;
     if(Auth.checkLogin()) {
@@ -84,6 +113,10 @@ angular.module('starter.controllers', [])
   $scope.showLoginModal = function() {
     $scope.loginModal.show();
   };
+
+  $scope.$on("app.triggerPush", function(e) {
+    Push.register();
+  })
 
   $scope.$on("app.logout", function(e) {
     $scope.loginModal.show();
@@ -189,6 +222,6 @@ angular.module('starter.controllers', [])
   }
 
   $scope.sendSettings = function(email, text, push) {
-  
-  };  
+
+  };
 })
