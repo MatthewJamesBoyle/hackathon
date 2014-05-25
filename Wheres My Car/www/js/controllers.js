@@ -1,10 +1,10 @@
 angular.module('starter.controllers', [])
 .factory("Push", function() {
   var pushNotification;
-  register = function() {
+  register = function(fn) {
       pushNotification = window.plugins.pushNotification;
       pushNotification.register(function(token) {
-        alert(token);
+        fn(token);
       }, function(err) {
         alert("error has occured");
         alert(err)
@@ -93,7 +93,7 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('AppCtrl', function($scope, $ionicModal, $location, Auth, Push) {
+.controller('AppCtrl', function($scope, $ionicModal, $location, Auth, Push, $http) {
   $ionicModal.fromTemplateUrl("templates/login.html", function(modal) {
     $scope.loginModal = modal;
     if(Auth.checkLogin()) {
@@ -115,7 +115,12 @@ angular.module('starter.controllers', [])
   };
 
   $scope.$on("app.triggerPush", function(e) {
-    Push.register();
+    Push.register(function(token) {
+      $http.post("http://samsherar.co.uk:5001/v1/register/", {"token": token})
+      .success(function(data) {
+        console.log(data);
+      })
+    });
   })
 
   $scope.$on("app.logout", function(e) {
@@ -218,6 +223,8 @@ angular.module('starter.controllers', [])
     }
     $http.post("http://samsherar.co.uk:5001/v1/settings/"+order_id, data)
     .success(function(data) {
+      if(name == "push")
+        alert("Push settings changed! These will be applied on app restart");
     })
   }
 
