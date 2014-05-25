@@ -75,7 +75,26 @@ class Settings(Resource):
             "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization",
             "Access-Control-Allow-Methods": "POST, OPTIONS"}
 
+class RegisterPush(Resource):
+  @auth.login_required
+  def post(self):
+    payload = request.json
+    username = auth.username()
+    User = models.Driver.query.filter_by(driverid=username).first()
+    User.token = payload['token']
+    db.session.commit()
+
+    return {"status": "OK"}, 200, {"Access-Control-Allow-Origin": "*"}
+
+  def options(self, order_id=None):
+    return { "Allow" : "GET,POST,PUT,OPTIONS"}, 200, \
+        { "Access-Control-Allow-Origin" : "*",
+            "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Authorization",
+            "Access-Control-Allow-Methods": "POST, OPTIONS"}
+
+
 api_endpoint.add_resource(Main, "/")
 api_endpoint.add_resource(Order, "/order/<int:order_id>", "/order/")
 api_endpoint.add_resource(Login, "/login/")
 api_endpoint.add_resource(Settings, "/settings/<int:order_id>")
+api_endpoint.add_resource(RegisterPush, "/register/")
