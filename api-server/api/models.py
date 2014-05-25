@@ -48,6 +48,7 @@ class Driver(db.Model):
   country = db.Column(db.String(50))
   country = db.Column(db.String(10))
   pin = db.Column(db.String(8))
+  token = db.Column(db.String(64))
   orders = db.relationship("OrderDetails", backref="driver")
 
   @classmethod
