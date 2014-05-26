@@ -3,17 +3,41 @@ angular.module('starter.controllers', [])
   var pushNotification;
   register = function(fn) {
       pushNotification = window.plugins.pushNotification;
-      pushNotification.register(function(token) {
-        fn(token);
-      }, function(err) {
-        alert("error has occured");
-        alert(err)
-      }, {
-        "badge": "true",
-        "sound": "false",
-        "alert": "true",
-        "ecb": "onNotificationAPN"
-      });
+
+      window.plugins.onNotificationGCM = function(e) {
+        switch(e.event) {
+        case "registered":
+          if(e.regid.length > 0) {
+            fn(e.regid, "android");
+          }
+          break;
+        case "message":
+          break;
+        }
+      }
+
+      if(device.platform == "android" || device.platform == "Android") {
+        pushNotification.register(function(success) {
+          fn(success, "android");
+        }, function(err) {
+          alert(err)
+        }, {
+          "senderID": "56992090575",
+          "ecb": "window.plugins.onNotificationGCM"
+        });
+      } else {
+        pushNotification.register(function(token) {
+          fn(token, "ios");
+        }, function(err) {
+          alert("error has occured");
+          alert(err)
+        }, {
+          "badge": "true",
+          "sound": "false",
+          "alert": "true",
+          "ecb": "onNotificationAPN"
+        });
+      }
 
       function onNotificationAPN(event) {
         if(event.alert) {
@@ -115,11 +139,18 @@ angular.module('starter.controllers', [])
   };
 
   $scope.$on("app.triggerPush", function(e) {
-    Push.register(function(token) {
-      $http.post("http://samsherar.co.uk:5001/v1/register/", {"token": token})
-      .success(function(data) {
-        console.log(data);
-      })
+    Push.register(function(token, device) {
+      if(device == "ios") {
+        $http.post("http://samsherar.co.uk:5001/v1/register/", {"token": token})
+        .success(function(data) {
+          console.log(data);
+        })
+      } else {
+        $http.post("http://samsherar.co.uk:5001/v1/register/", {"token": token})
+        .success(function(data) {
+
+        })
+      }
     });
   })
 
